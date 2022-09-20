@@ -35,7 +35,7 @@
     .name h1{
        font-family: 'Alatsi', sans-serif;
         color:var(--main-txt-color) ;
-        font-size: 28px;
+        font-size: 25px;
 
     }
     .portfolio_label{
@@ -65,7 +65,7 @@
     .menu{
         width: 35px;
         height: 39px;
-
+        background-color: transparent;
         border: none;
         cursor: pointer;
 
