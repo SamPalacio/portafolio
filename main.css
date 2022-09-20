@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    :root
+    {
+        --main-bg-color: #f7efe4;
+        --1-color: #e09a2f;
+        --2-color: #f5ead3;
+        --3-color: #eee6dc;
+        --4-color: #fbf7f4;
+        --alt-color: #ece4db;
+        --markdown-color: #d7d7d8;
+        --main-txt-color: #453F3B;
+        scroll-behavior: smooth;
+    }
+
+    body
+    {
+        background-color: var(--main-bg-color);
+    }
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px ;
+
+    }
+    header{
+        display: flex;
+        margin-bottom: 25px;
+    }
+    .name h1{
+       font-family: 'Alatsi', sans-serif;
+        color:var(--main-txt-color) ;
+        font-size: 28px;
+
+    }
+    .portfolio_label{
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px ;
+        color:var(--main-txt-color) ;
+        margin-left: 25px;
+        top: 8px;
+
+    }
+    .options_bar{
+        display: none;
+    }
+    .name{
+        width: 50%;
+    }
+    .menu_hamburger{
+        width: 45%;
+        order: -1;
+        display: flex;
+        position: relative;
+        justify-content: left;
+        left: 12px;
+        align-items: center;
+    }
+    .menu{
+        width: 35px;
+        height: 39px;
+        background: url(/src/icons/menu.svg) no-repeat;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .about_me{
+        display:flex;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .description{
+        order: 1;
+    }
+    .profile_picture{
+        background-color:var(--1-color) ;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+    }
+    .profile_image{
+        width: 170%;
+        position: relative;
+        bottom: 15px;
+        left: 8px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding: 35px;
+        position: relative;
+        left: 5px;
+        bottom: 15px;
+
+    }
+
+    .cv_btn{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        background-color: var(--1-color) ;
+
+    }
+    .cv{
+        width: 150px;
+        height: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: var(--main-bg-color);
+        position: relative;
+        text-decoration: none;
+        top: 14px;
+        left: 25px;
+    }
+
+    .tools{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        bottom: 25px;
+    }
+    .tools_label{
+        font-family: 'Poppins', sans-serif;
+        font-size:13px ;
+        color: var(--main-txt-color);
+        border-bottom: 4px solid var(--1-color);
+        width: 35%;
+        text-align: center;
+    }
+
+
+    .shadow{
+        box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)
+
+    }

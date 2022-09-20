@@ -3,16 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>Portafolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css"/>
+        
+
     </head>
     <body>
         <header>
 
             <div class="name">
-                <h2>Portafolio</h2>
+                <h2 class="portfolio_label">Portafolio</h2>
                 <h1>Samuel Palacio</h1>
             </div>
 
-            <div class="options">
+            <div class="menu_hamburger">
+                <button class="menu">
+
+                </button>
+            </div>
+
+
+            <div class="options_bar">
 
                <button>
                    <h3>Videojuegos</h3>
@@ -34,41 +45,49 @@
         </header>
 
         <main>
-            <section id="about_me">
+            <section class="about_me">
                 <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    <a class="cv" href="src/cv.pdf" download="CV_SamuelPalacio">Descarga mi CV</a>
+                    <p>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                    <div class="cv_btn shadow">
+
+                        <a class="cv" href="src/cv.pdf" download="CV_SamuelPalacio">Descarga mi CV</a>
+
+
+                    </div>
                 </div>
 
-                <div class="profile_picture">
-                    <img class="profile_image"src="src/mainpicture.png" alt="profile_picture" width="450">
+                <div class="profile_picture shadow">
+                    <img class="profile_image" src="src/imgs/mainpicture.png" alt="profile_picture" >
                 </div>
             </section>
 
-            <section id="tools">
+            <section class="tools">
 
 
-                <h1>Herramientas</h1>
+                <h1 class="tools_label">Herramientas</h1>
                 <div class="game_tools">
                     <h3>Game Dev</h3>
                     <span class="tool">
-                        <img src="src/icon.png" alt="c# icon" width="70">
+                        <img src="src/icons/icon.png" alt="c# icon" width="70">
                         <h4>c#</h4>
                     </span>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Unity icon" width="70">
+                        <img src="src/icons/icon.png" alt="Unity icon" width="70">
                         <h4>Unity</h4>
                     </span>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Maya icon" width="70">
+                        <img src="src/icons/icon.png" alt="Maya icon" width="70">
                         <h4>Maya</h4>
                     </span>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Blender icon" width="70">
+                        <img src="src/icons/icon.png" alt="Blender icon" width="70">
                         <h4>Blender</h4>
                     </span>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Substance icon" width="70">
+                        <img src="src/icons/icon.png" alt="Substance icon" width="70">
                         <h4>Substance Painter</h4>
                     </span>
                 </div>
@@ -77,15 +96,15 @@
 
                     <h3>Otras</h3>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Photoshop icon" width="70">
+                        <img src="src/icons/icon.png" alt="Photoshop icon" width="70">
                         <h4>Photoshop</h4>
                     </span>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Premiere icon" width="70">
+                        <img src="src/icons/icon.png" alt="Premiere icon" width="70">
                         <h4>Premiere</h4>
                     </span>
                     <span class="tool">
-                        <img src="src/icon.png" alt="Figma icon" width="70">
+                        <img src="src/icons/icon.png" alt="Figma icon" width="70">
                         <h4>Figma</h4>
                     </span>
 
@@ -101,7 +120,7 @@
                     <h2>Videojuegos</h2>
 
                     <div class="videogame_project" >
-                        <img src="src/poster.png" alt="froggo jump poster" width="250" height="300">
+                        <img src="src/imgs/poster.png" alt="froggo jump poster" width="250" height="300">
                         <span class="description">
                             <h1>Froggo Jump!</h1>
                             <h4>Para este proyecto fui responsable de</h4>
@@ -122,7 +141,7 @@
                     </div>
 
                     <div class="videogame_project" >
-                        <img src="src/poster.png" alt="Talkie Camp poster" width="250" height="300">
+                        <img src="src/imgs/poster.png" alt="Talkie Camp poster" width="250" height="300">
                         <span class="description">
                             <h1>Talkie Camp</h1>
                             <h4>Para este proyecto fui responsable de</h4>
@@ -143,7 +162,7 @@
                     </div>
 
                     <div class="videogame_project" >
-                        <img src="src/poster.png" alt="Phantomized poster" width="250" height="300">
+                        <img src="src/imgs/poster.png" alt="Phantomized poster" width="250" height="300">
                         <span class="description">
                             <h1>Phantomized</h1>
                             <h4>Para este proyecto fui responsable de</h4>
@@ -164,7 +183,7 @@
                     </div>
 
                     <div class="videogame_project" >
-                        <img src="src/poster.png" alt="Excallibulinator poster" width="250" height="300">
+                        <img src="src/imgs/poster.png" alt="Excallibulinator poster" width="250" height="300">
                         <span class="description">
                             <h1>Sala arcade: Excallibulinator</h1>
                             <h4>Para este proyecto fui responsable de</h4>
@@ -192,7 +211,7 @@
                      <div class="art_project" >
                          <h3>MP40 Gun-Game Ready</h3>
                           <div class="image_slider">
-                              <img src="src/render.png" alt="MP40 render 1" width="460" >
+                              <img src="src/imgs/render.png" alt="MP40 render 1" width="460" >
 
                           </div>
                      </div>
@@ -200,21 +219,21 @@
                      <div class="art_project" >
                          <h3>Wild West Saloon</h3>
                          <div class="image_slider">
-                             <img src="src/render.png" alt="Wild West render 1" width="460" >
+                             <img src="src/imgs/render.png" alt="Wild West render 1" width="460" >
                          </div>
                      </div>
 
                      <div class="art_project" >
                          <h3>Timeless World-Concept Art</h3>
                          <div class="image_slider">
-                             <img src="src/render.png" alt="Timeless render 1" width="460" >
+                             <img src="src/imgs/render.png" alt="Timeless render 1" width="460" >
                          </div>
                      </div>
 
                      <div class="art_project" >
                          <h3>GameBoy-GameReady</h3>
                          <div class="image_slider">
-                             <img src="src/render.png" alt="GameBoy render 1" width="460" >
+                             <img src="src/imgs/render.png" alt="GameBoy render 1" width="460" >
                          </div>
                      </div>
                  </section>
