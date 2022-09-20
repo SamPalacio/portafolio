@@ -51,10 +51,10 @@
         display: none;
     }
     .name{
-        width: 50%;
+        width: 60%;
     }
     .menu_hamburger{
-        width: 50%;
+        width: 40%;
         order: -1;
         display: flex;
         position: relative;
