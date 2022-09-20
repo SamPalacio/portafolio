@@ -129,15 +129,14 @@
 
     }
     .cv{
-        width: 150px;
-        height: 50px;
+        width: 180px;
+        height: 20px;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
         font-size: 12px;
         color: var(--main-bg-color);
         position: relative;
         text-decoration: none;
-        top: 14px;
     }
 
     .tools{
@@ -150,14 +149,38 @@
     }
     .tools_label{
         font-family: 'Poppins', sans-serif;
-        font-size:13px ;
+        font-size:15px ;
         color: var(--main-txt-color);
         border-bottom: 4px solid var(--1-color);
         width: 35%;
         text-align: center;
+        margin-bottom: 14px;
+    }
+     h3{
+         font-family: 'Poppins', sans-serif;
+         font-size:13px ;
+
+     }
+    .game_tools{
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
     }
 
+    .tool {
+        display: flex;
+        flex-direction: column;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        text-align: center;
 
+    }
+    .tool h4{
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px ;
+    }
     .shadow{
         box-shadow:
                 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
