@@ -163,9 +163,10 @@
      }
     .game_tools{
         display: flex;
-        height: 100px;
+        height: 60px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .tool {
