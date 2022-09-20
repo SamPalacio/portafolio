@@ -30,6 +30,7 @@
     header{
         display: flex;
         margin-bottom: 25px;
+        width: 100%;
     }
     .name h1{
        font-family: 'Alatsi', sans-serif;
@@ -53,7 +54,7 @@
         width: 50%;
     }
     .menu_hamburger{
-        width: 45%;
+        width: 50%;
         order: -1;
         display: flex;
         position: relative;
