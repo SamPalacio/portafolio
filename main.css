@@ -86,9 +86,7 @@
         align-items: center;
 
     }
-    .description{
-        order: 1;
-    }
+
     .profile_picture{
         background-color:var(--1-color) ;
         display: flex;
@@ -113,7 +111,7 @@
         position: relative;
         left: 5px;
         bottom: 15px;
-
+        order: 1;
     }
 
     .cv_btn{
@@ -121,7 +119,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 150px;
         height: 30px;
         border-radius: 10px;
         background-color: var(--1-color) ;
@@ -142,17 +140,19 @@
     .tools{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 98%;
         align-items: center;
         position: relative;
         bottom: 25px;
+        justify-content: center;
+        text-align: center;
     }
     .tools_label{
         font-family: 'Poppins', sans-serif;
         font-size:15px ;
         color: var(--main-txt-color);
         border-bottom: 4px solid var(--1-color);
-        width: 35%;
+        width: 130px;
         text-align: center;
         margin-bottom: 14px;
     }
@@ -175,7 +175,12 @@
         height: 60px;
         justify-content: center;
         text-align: center;
+        align-items: center;
 
+    }
+    .tool img{
+        width: 42px;
+        height: 40px;
     }
     .tool h4{
         font-family: 'Poppins', sans-serif;
