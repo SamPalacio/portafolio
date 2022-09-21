@@ -226,7 +226,7 @@
     .videogame_project{
 
         width: 93%;
-        height: 210px;
+        height: 40%;
         background-color:var(--2-color);
         margin-bottom: 20px;
         border-radius: 20px;
@@ -237,9 +237,7 @@
     .poster{
         width: 40%;
         height: 100%;
-        background-color: aqua;
         border-radius: 20px;
-
 
     }
 
