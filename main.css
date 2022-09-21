@@ -225,25 +225,65 @@
 
     .videogame_project{
 
+
+        display: flex;
         width: 93%;
-        height: 40%;
         background-color:var(--2-color);
         margin-bottom: 20px;
         border-radius: 20px;
-        padding: 20px;
-        padding-top: 25px;
+        padding: 10px;
+        justify-content: space-evenly;
     }
 
     .poster{
-        width: 40%;
-        height: 100%;
-        border-radius: 20px;
+
+        width: 39%;
+        height: 50vw;
+        border-radius: 14px;
 
     }
 
     .poster img{
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
 
+        position: relative;
+        width: 105%;
+        height: 50vw;
+        border-radius: 14px;
+        right:  10px;
+        top: 6px;
+
+    }
+    .project_info{
+
+        width: 55%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .project_info p{
+        font-size: 3vw;
+    }
+    li{
+        position: relative;
+        right: 20px;
+    }
+
+    .project_btns{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .project_btn{
+        margin-top: 10px;
+        width: 45%;
+        height: 40px;
+        background-color: var(--main-bg-color);
+        border: none;
+        border-radius: 10px;
     }
