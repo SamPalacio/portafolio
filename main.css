@@ -247,10 +247,9 @@
 
         position: relative;
         width: 105%;
-        height: 50vw;
+        height: inherit;
         border-radius: 14px;
         right:  10px;
-        top: 6px;
 
     }
     .project_info{

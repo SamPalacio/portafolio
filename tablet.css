@@ -1,0 +1,37 @@
+.menu_hamburger{
+    display: none;
+}
+.name{
+    max-width: 250px;
+    order: -1;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.portfolio_label{
+    right: 10px;
+}
+
+.options_bar{
+    display: flex;
+    width: 340px;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header{
+    justify-content: center;
+}
+
+.options_bar button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: var(--main-txt-color);
+}
+
+button h3{
+    font-size: 13px;
+    border-bottom: 4px solid var(--1-color);
+}
