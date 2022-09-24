@@ -89,18 +89,21 @@
     }
 
     .profile_picture{
+
         background-color:var(--1-color) ;
         display: flex;
-        width: 150px;
-        height: 150px;
+        width: 30vw;
+        height: 30vw;
         align-items: center;
         justify-content: center;
-        border-radius: 100px;
+        border-radius: 1000px;
     }
     .profile_image{
-        width: 170%;
+
+        width: 50vw;
+        height: 50vw;
         position: relative;
-        bottom: 15px;
+        bottom: 3vw;
         left: 8px;
     }
     .description{
@@ -164,28 +167,29 @@
      }
     .game_tools{
         display: flex;
-        height: 60px;
-        justify-content: center;
+        height: 70px;
+        width: 100vw;
         align-items: center;
+        justify-content: center;
         margin-bottom: 20px;
     }
 
     .tool {
         display: flex;
         flex-direction: column;
-        width: 60px;
-        height: 60px;
+        width: 15vw;
+        height: 15vw;
         justify-content: center;
         text-align: center;
         align-items: center;
-
     }
     .tool img{
-        width: 43px;
+        width: 10.5vw;
+        height:  10.5vw;
     }
     .tool h4{
         font-family: 'Poppins', sans-serif;
-        font-size: 9px ;
+        font-size: 10px ;
     }
     .shadow{
         box-shadow:
@@ -206,14 +210,14 @@
     }
     .category_label{
         font-family: 'Poppins', sans-serif;
-        font-size:13px ;
+        font-size:15px ;
         color: var(--main-txt-color);
         border-bottom: 4px solid var(--1-color);
         width: 130px;
         text-align: center;
         margin-bottom: 14px;
         position: relative;
-        right: 90px;
+        right: 110px;
         margin-top: 10px;
     }
     .videogames_projects{
@@ -222,6 +226,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 25px;
     }
 
     .videogame_project{
@@ -353,3 +358,44 @@
         align-items: center;
         justify-content: center;
     }
+.art_projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:start;
+
+}
+
+.art_project{
+    display: flex;
+    position: relative;
+    width: 90%;
+    border-radius: 20px;
+    height: 55vw;
+    background-image: url("src/imgs/mp40Images/mp40_1.jpg");
+    margin-bottom: 20px;
+    background-size: cover;
+    align-items: end;
+    padding: 10px;
+    justify-content: center;
+
+}
+.art_projects h3{
+position: relative;
+    right: 80px;
+    margin-bottom: 5px;
+}
+.art_projects h2{
+ width: 80px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: var(--2-color);
+    border-radius: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
