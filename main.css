@@ -58,7 +58,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        padding-right:50px;
+        padding-right:25px;
     }
     .menu_hamburger{
         width: 20%;
@@ -344,7 +344,6 @@
     iframe{
         height: 220px;
         width: 90%;
-
         border-radius: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
