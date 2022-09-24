@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="./tablet.css" media="(min-width: 600px)" />
-        <link rel="stylesheet" href="./desktop.css" media="(min-width: 800px)" />
+        <script src="main.js"></script>
 
     </head>
     <body>
@@ -155,13 +155,20 @@
 
                                 <div class="videogame_project shadow" >
 
-                                        <div class="poster ">
-                                            <img class="shadow" src="src/imgs/froggo_jump_poster.jpg" alt="">
+                                        <div class="poster shadow ">
+                                            <div class="poster_img" onclick="translate_back(this)" onmouseenter="translate_back(this)" onmouseleave="translate_back(this)">
+                                                <div class="project_description ">
+                                                    <p>Froog </p>
+
+                                                </div>
+                                            </div>
+
+
                                         </div>
                                     <div class="project_info">
 
                                         <h2>Froggo Jump!</h2>
-                                        <p>Responsable de:</p>
+                                        <p>Responsabilidades:</p>
                                             <ul>
                                                 <li>
                                                     <p>
@@ -192,45 +199,7 @@
                                     </div>
                                 </div>
 
-                                <div class="videogame_project shadow" >
 
-                                    <div class="poster ">
-                                        <img class="shadow" src="src/imgs/talkiecampposter.jpg" alt="">
-
-                                    </div>
-                                    <div class="project_info">
-
-                                        <h2>Talkie Camp</h2>
-                                        <p>Responsable de:</p>
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    Implementación multijugador con Photon
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                   Programación UI
-                                                </p>
-                                            </li>
-
-                                            <li>
-                                                <p>
-                                                   Desarrollo de minijuegos
-                                                </p>
-                                            </li>
-                                        </ul>
-
-                                        <div class="project_btns">
-                                            <button class="project_btn shadow">
-                                                GitHub
-                                            </button>
-                                            <button class="project_btn shadow">
-                                                Gameplay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
 
 
                             </section>
@@ -305,4 +274,5 @@
                  </footer>
            -->
     </body>
+    <script src="main.js"></script>
 </html>
