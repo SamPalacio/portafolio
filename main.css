@@ -46,7 +46,7 @@
         font-size: 16px ;
         color:var(--main-txt-color) ;
         top: 7px;
-        right: 70px;
+        right: 60px;
 
     }
     .options_bar{
@@ -342,8 +342,9 @@
         display: none;
     }
     iframe{
-        width: 95%;
         height: 220px;
+        width: 90%;
+
         border-radius: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
