@@ -93,7 +93,22 @@
                     </span>
                 </div>
 
+                <div class="game_tools">
 
+                    <span class="tool">
+                        <img src="src/icons/html_icon.png" alt="html icon" >
+                        <h4>Photon</h4>
+
+                    </span>
+                    <span class="tool">
+                        <img src="src/icons/css_icon.png" alt="css icon" >
+                        <h4>Firebase</h4>
+
+                    </span>
+
+
+
+                </div>
 
                 <h3>Web dev</h3>
 
@@ -153,10 +168,12 @@
 
                             <section class="videogames_projects">
 
-                                <div class="videogame_project shadow" >
+                                <div class="project shadow">
+
+                                    <div class="videogame_project " >
 
                                         <div class="poster shadow ">
-                                            <div class="poster_img" onmouseenter="translate_back(this)" onmouseleave="translate_back(this)">
+                                            <div class="poster_img" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
                                                 <div class="project_description ">
                                                     <p>Froog </p>
 
@@ -165,10 +182,10 @@
 
 
                                         </div>
-                                    <div class="project_info">
+                                        <div class="project_info">
 
-                                        <h2>Froggo Jump!</h2>
-                                        <p>Responsabilidades:</p>
+                                            <h2>Froggo Jump!</h2>
+                                            <p>Responsabilidades:</p>
                                             <ul>
                                                 <li>
                                                     <p>
@@ -188,16 +205,31 @@
                                                 </li>
                                             </ul>
 
-                                        <div class="project_btns">
+                                            <div class="project_btns">
+
+
                                                 <button class="project_btn shadow">
-                                                    GitHub
-                                                </button>
-                                                <button class="project_btn shadow">
+                                                    APK
+                                                </button  >
+                                                <button class="project_btn shadow" onclick="show_video('frog_gameplay')">
                                                     Gameplay
                                                 </button>
+                                            </div>
+
+
+
+
+
                                         </div>
                                     </div>
+                                        <div class="video" id="frog_gameplay">
+                                            <iframe  src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                        </div>
+
+
                                 </div>
+
 
 
 

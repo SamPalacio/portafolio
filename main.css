@@ -227,10 +227,9 @@
 
 
         display: flex;
-        width: 93%;
-        background-color:var(--2-color);
-        margin-bottom: 20px;
-        border-radius: 20px;
+
+        width: 100%;
+
         padding: 10px;
         justify-content: space-evenly;
         align-items: center;
@@ -320,5 +319,31 @@
         border: none;
         border-radius: 10px;
         font-family: 'Alatsi', sans-serif;
+
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        width: 93%;
+        align-items: center;
+        background-color:var(--2-color);
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+
+    }
+    .video{
+        height: 220px;
+        display: none;
+    }
+    iframe{
+        height: 200px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .show{
+        display: block;
 
     }
