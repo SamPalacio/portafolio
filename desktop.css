@@ -30,6 +30,17 @@ header{
     width:52%;
 
 }
+.poster_img {
+    transition: all 0.4s;
+
+    padding: 30px;
+}
+.project_info{
+    width: 59%;
+    height: 300px;
+
+    justify-content: space-between;
+}
 .options_bar{
     display: flex;
     width: 60vw;
@@ -43,7 +54,7 @@ header{
     position:absolute;
     width: 92vw;
     max-width: 960px;
-    height: 82  00px;
+    height: 8000px;
     border-left: 1px solid rgba(129, 129, 129, 0.14);
     border-right: 1px solid rgba(129, 129, 129, 0.14);
     z-index: -1;
@@ -54,10 +65,22 @@ header{
     flex-direction:row ;
 
 }
+.category_label h2 {
+
+    position: relative;
+    left: 20px;
+
+
+}
+.group_tools{
+    align-items: center;
+    justify-content: center;
+    width: 68vw;
+    max-width: 700px;
+}
 .game_tools  h3{
 
-    width: 200px;
-
+    width: 180px;
 }
 .all_tools{
     width: auto;

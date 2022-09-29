@@ -4,7 +4,10 @@
   let dots =document.querySelectorAll(".dot");
    dots.forEach(dot=> dot.addEventListener("click",changeImage));
 
+   let firstDots = document.querySelectorAll(".dot.first")
 
+
+    firstDots.forEach(dot => {dot.style.backgroundColor="#e09a2f";})
   const mp40Images=['src/imgs/mp40Images/mp40_1.jpg','src/imgs/mp40Images/mp40_2.jpg','src/imgs/mp40Images/mp40_3.jpg','src/imgs/mp40Images/mp40_4.jpg']
 
     function changeImage()
@@ -30,7 +33,6 @@
 
         const description =info.children.item(0);
         info.classList.toggle("poster_zoom")
-        description.classList.toggle("translate")
     }
 
     function show_video(id_video){

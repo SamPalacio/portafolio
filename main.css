@@ -259,6 +259,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 790px;
+    margin: 0 auto;
 
 }
 button h2{
@@ -278,7 +280,8 @@ button h2{
 
 .category_label h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 5vw;
+    font-size: min(max(10px, 5vw), 22px);
+
     border-bottom: 4px solid var(--1-color);
 
 }
@@ -309,6 +312,8 @@ button h2{
     width: 39%;
     height: 50vw;
     border-radius: 14px;
+    max-width: 230px;
+    max-height: 340px;
     overflow: clip;
 
 }
@@ -328,6 +333,8 @@ button h2{
 
 .poster_zoom {
     transform: scale(1.1);
+
+
 }
 
 
@@ -340,10 +347,13 @@ button h2{
     border-radius: 15px;
     text-align: center;
     padding: 10px;
-    backdrop-filter: blur(4px);
     visibility: hidden;
     transform: scale(0);
 
+
+}
+.blur{
+   backdrop-filter: blur(4px);
 
 }
 
@@ -358,7 +368,8 @@ button h2{
 
     width: 55%;
     font-family: 'Poppins', sans-serif;
-    font-size: 4vw;
+    font-size: min(max(12px, 4vw), 20px);
+    max-font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -366,7 +377,8 @@ button h2{
 }
 
 .project_info p {
-    font-size: 3vw;
+    font-size: min(max(12px, 3fvw), 20px);
+
 }
 
 li {
@@ -394,7 +406,7 @@ li {
 .project {
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 90%;
     align-items: center;
     background-color: var(--2-color);
     margin-bottom: 20px;
@@ -413,7 +425,8 @@ li {
 
 iframe {
     height: 60vw;
-    width: 90%;
+    max-height: 350px;
+    width: 89%;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -444,6 +457,8 @@ iframe {
     background-size: cover;
     align-items: end;
     padding: 10px;
+    max-width: 900px;
+    max-height: 400px;
     justify-content: center;
 
 }
