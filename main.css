@@ -24,8 +24,7 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-
+       font-size: min(max(12px, 3vw), 20px);
 }
 
 header {
@@ -33,6 +32,8 @@ header {
     margin-top: 10px;
     margin-bottom: 25px;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .name h1 {
@@ -43,13 +44,21 @@ header {
 
 }
 
+.name{
+    position: relative;
+    right: 20px;
+    width: auto;
+    order: 1;
+    align-items: flex-end;
+}
+
 .portfolio_label {
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: var(--main-txt-color);
     top: 7px;
-    right: 60px;
+    left: 12px;
 
 }
 
@@ -57,14 +66,7 @@ header {
     display: none;
 }
 
-.name {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 25px;
-}
+
 
 .menu_hamburger {
     width: 20%;
@@ -104,15 +106,19 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 1000px;
+    max-height: 210px;
+    max-width:210px ;
 }
 
 .profile_image {
 
-    width: 90vw;
-    height: 90vw;
+    width: 60vw;
+    height: 60vw;
+    max-height: 250px;
+    max-width: 250px ;
     position: relative;
-    bottom: 6vw;
-    left: 8px;
+
+    left: 2px;
 }
 
 .description {
@@ -120,10 +126,12 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    padding: 35px;
+    padding: 20px;
     position: relative;
     bottom: 15px;
     order: 1;
+    max-width: 300px;
+    margin: 10px;
 }
 
 .cv_btn {
@@ -156,17 +164,17 @@ header {
     width: 98%;
     align-items: center;
     position: relative;
-    bottom: 25px;
+    bottom: 40px;
     justify-content: center;
     text-align: center;
 }
 
 .tools_label {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: min(max(14px, 3.3vw), 22px);
     color: var(--main-txt-color);
     border-bottom: 4px solid var(--1-color);
-    width: 130px;
+    width: auto;
     text-align: center;
     margin-bottom: 14px;
 }
@@ -196,16 +204,21 @@ h3 {
     align-items: center;
     margin-right: 5px;
     margin-left: 5px;
+    max-width: 100px;
+    max-height:100px ;
 }
 
 .tool img, .contact_app img {
     width: 10.5vw;
     height: 10.5vw;
+    max-width: 65px;
+    max-height:65px ;
+
 }
 
 .tool h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: min(max(9px, 2.9vw), 18px);
 }
 
 .shadow {
@@ -220,7 +233,7 @@ h3 {
 
 .tools h3 {
     margin-bottom: 7px;
-    font-size: 3.5vw;
+    font-size: min(max(14px, 3.1vw), 22px);
 }
 
 .projects {
@@ -379,7 +392,7 @@ li {
 }
 
 iframe {
-    height: 220px;
+    height: 60vw;
     width: 90%;
     border-radius: 20px;
     margin-top: 10px;

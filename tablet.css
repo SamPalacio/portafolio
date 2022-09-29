@@ -1,37 +1,90 @@
-.menu_hamburger{
-    display: none;
-}
+
 .name{
-    max-width: 250px;
+    position: relative;
+    left: 80px;
+  width: auto;
     order: -1;
     align-items: flex-start;
-    padding-left: 30px;
 }
 
 .portfolio_label{
-    right: 10px;
+    left: 12px;
+    font-size: 23px;
+
+}
+.name h1 {
+    font-family: 'Alatsi', sans-serif;
+    color: var(--main-txt-color);
+    font-size: 33px;
+
+
 }
 
-.options_bar{
-    display: flex;
-    width: 340px;
-    height: 80px;
-    justify-content: space-evenly;
-    align-items: center;
-}
 header{
-    justify-content: center;
+    display: flex;
+
+    justify-content: space-between;
 }
 
 .options_bar button{
-    width: 100px;
+    width: auto;
     height: 40px;
     border: none;
     background-color: transparent;
     color: var(--main-txt-color);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 button h3{
-    font-size: 13px;
+    width: auto;
     border-bottom: 4px solid var(--1-color);
+
+}
+
+.tools{
+    bottom: 0px;
+}
+.about_me {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--2-color);
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+
+}
+
+
+.game_tools {
+
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.description{
+    order: -1;
+    width:50%;
+    max-width: 400px;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+.menu{
+    width: 45px;
+    height: 45px;
+}
+
+.menu_hamburger{
+    position: relative;
+    right: 20px;
 }
