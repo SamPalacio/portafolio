@@ -1,22 +1,101 @@
-body{
-    background-color: #453F3B;
-}
-.options_bar h3{
-    font-size: min(max(12px, 3vw), 22px);
-    display: flex;
-    flex-direction: column;
+
+header{
+
     justify-content: center;
-    align-items: flex-end;
-    padding-right: 25px;
+}
+.name{
+    position: relative;
+    left: 0;
 }
 
+.menu_hamburger{
+    display: none;
+}
+.options_bar button{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_me{
+    max-width: 800px;
+    background-color: transparent;
+    margin-top: 60px;
+    margin: 0 auto;
+}
 
+.description{
+    max-width: 900px;
+    width:52%;
+
+}
 .options_bar{
     display: flex;
-    width: 30%;
+    width: 60vw;
+    max-width: 520px;
     height: 80px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
-    background-color: #fbf7f4;
 }
+.line{
+    display: flex;
+    position:absolute;
+    width: 92vw;
+    max-width: 960px;
+    height: 82  00px;
+    border-left: 1px solid rgba(129, 129, 129, 0.14);
+    border-right: 1px solid rgba(129, 129, 129, 0.14);
+    z-index: -1;
 
+}
+.game_tools {
+
+    flex-direction:row ;
+
+}
+.game_tools  h3{
+
+    width: 200px;
+
+}
+.all_tools{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.options_bar h3{
+    font-size: min(max(12px, 3vw), 19px);
+    border-bottom: 4px solid rgba(124, 113, 105, 0.35);
+    transition: all 0.3s;
+}
+.options_bar h3:hover{
+    cursor: pointer;
+    font-size: min(max(12px, 3vw), 22px);
+    border-bottom: 4px solid var(--1-color)
+
+}
+.profile_picture{
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    right: 20px;
+}
+.profile_image{
+    max-width: 340px;
+    max-height: 340px;
+    bottom: 10px;
+}
+.cv_btn {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 20px;
+    transition: all 0.4s;
+}
+.cv_btn:hover{
+    cursor: pointer;
+    max-width: 340px;
+    max-height: 50px;
+}

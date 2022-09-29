@@ -6,7 +6,16 @@
     order: -1;
     align-items: flex-start;
 }
-
+.menu_hamburger {
+    width: 20%;
+    order: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
 .portfolio_label{
     left: 12px;
     font-size: 23px;
@@ -23,7 +32,7 @@
 header{
     display: flex;
 
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .options_bar button{
