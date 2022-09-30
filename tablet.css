@@ -44,7 +44,9 @@ header{
     justify-content: center;
 
 }
-
+.options button h3{
+    border-bottom: none;
+}
 button h3{
     width: auto;
     border-bottom: 4px solid var(--1-color);

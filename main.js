@@ -9,7 +9,9 @@
     let menu=document.querySelector(".menu");
     let close=document.querySelector(".close");
     const menu_bar = document.querySelector(".menu_side");
-
+    const  posterFroggo =document.querySelector("#froggoPoster");
+    const  posterTalkie=document.querySelector("#talkiePoster");
+    const  posterPhantomized =document.querySelector("#phantomizedPoster");
     const mp40Images=['src/imgs/mp40Images/mp40_1.jpg','src/imgs/mp40Images/mp40_2.jpg','src/imgs/mp40Images/mp40_3.jpg','src/imgs/mp40Images/mp40_4.jpg'];
     const gameboyImages=['src/imgs/gameboyImages/gameboy_1.jpg','src/imgs/gameboyImages/gameboy_2.jpg','src/imgs/gameboyImages/gameboy_3.jpg'];
     const saloonImages=['src/imgs/saloonImages/saloon_1.jpg','src/imgs/saloonImages/saloon_2.jpg','src/imgs/saloonImages/saloon_3.jpg','src/imgs/saloonImages/saloon_4.jpg','src/imgs/saloonImages/saloon_5.jpg'];
@@ -21,7 +23,9 @@
 
 
   function init(){
-
+            posterFroggo.style.backgroundImage =  'url("src/imgs/froggo_jump_poster.jpg")';
+            posterPhantomized.style.backgroundImage =  'url("src/imgs/phantomizedPoster.jpg")';
+            posterTalkie.style.backgroundImage =  'url("src/imgs/talkiecampposter.jpg")';
 
       window.addEventListener('scroll', (e) => {
 
@@ -30,6 +34,8 @@
               if (window.innerWidth<=820 ){
                   const h =document.querySelector("header");
                   h.classList.add("hide");
+                  menu_bar.classList.remove("show_menu")
+
               }
           } else if (oldValue > newValue) {
               const h =document.querySelector("header");
