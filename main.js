@@ -19,22 +19,26 @@
 
   init();
 
-    window.addEventListener('scroll', (e) => {
-
-        newValue = window.scrollY;
-        if (oldValue < newValue) {
-            if (window.innerWidth<=820 ){
-                const h =document.querySelector("header");
-                h.classList.add("hide");
-            }
-        } else if (oldValue > newValue) {
-            const h =document.querySelector("header");
-            h.classList.remove("hide");
-        }
-        oldValue = newValue;
-                });
 
   function init(){
+
+
+      window.addEventListener('scroll', (e) => {
+
+          newValue = window.scrollY;
+          if (oldValue < newValue) {
+              if (window.innerWidth<=820 ){
+                  const h =document.querySelector("header");
+                  h.classList.add("hide");
+              }
+          } else if (oldValue > newValue) {
+              const h =document.querySelector("header");
+              h.classList.remove("hide");
+          }
+          oldValue = newValue;
+      });
+
+
       firstDots.forEach(dot => {dot.style.backgroundColor="#e09a2f";})
         menu.addEventListener("click",showMenu)
         close.addEventListener("click",showMenu)
@@ -82,7 +86,8 @@
         console.log(target)
         menu_bar.classList.remove("show_menu")
         document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
-
+        const h =document.querySelector("header");
+        h.classList.add("hide");
     }
 
     function changeImage()

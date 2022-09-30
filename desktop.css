@@ -3,6 +3,7 @@ header{
     position: relative;
     margin-bottom: 40px;
     justify-content: center;
+    z-index: 0;
 }
 .name{
     position: relative;
@@ -59,7 +60,7 @@ main{
     position:absolute;
     width: 92vw;
     max-width: 960px;
-    height: 10000px;
+    height: 12000px;
     border-left: 1px solid rgba(129, 129, 129, 0.14);
     border-right: 1px solid rgba(129, 129, 129, 0.14);
     z-index: -1;
