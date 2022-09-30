@@ -209,7 +209,8 @@ main{
 .cv_btn {
     margin-top: 20px;
     margin-bottom: 10px;
-
+    transition: all 1s;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -671,4 +672,8 @@ iframe {
 
 .hide{
     display: none;
+}
+.cv_btn:hover{
+ width: 400px;
+    height: 50px;
 }
