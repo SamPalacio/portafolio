@@ -23,6 +23,26 @@
                             <img class="menu" src="src/icons/menu.png" alt="">
                         </button>
 
+                            <div class="menu_side show_menu">
+
+                                <div class="close"></div>
+                                <div class="options">
+                                    <button data-key="videogames">
+                                        <h3>Videojuegos</h3>
+                                    </button>
+                                    <button data-key="art">
+                                        <h3>Arte</h3>
+                                    </button>
+                                    <button data-key="animation">
+                                        <h3>Animación</h3>
+                                    </button>
+                                    <button data-key="contact">
+                                        <h3>Contacto</h3>
+                                    </button>
+                                </div>
+
+                            </div>
+
 
                         <div class="options_bar">
 
@@ -138,6 +158,63 @@
 
                                     </div>
                                 </div>
+                                <div class="project shadow">
+
+                                    <div class="videogame_project ">
+
+                                        <div class="poster shadow ">
+                                            <div class="poster_img" onmouseenter="show_description(this)"
+                                                 onmouseleave="show_description(this)">
+                                                <div class="project_description blur "></div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="project_info">
+
+                                            <h2>Talkie Camp</h2>
+                                            <p>Responsabilidades:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        Networking con photon
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Desarollo minijuegos
+                                                    </p>
+                                                </li>
+
+                                                <li>
+                                                    <p>
+                                                        Progración UI
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <div class="project_btns">
+
+
+                                                <button class="project_btn shadow">
+                                                    APK
+                                                </button>
+                                                <button class="project_btn shadow" onclick="show_video('talkie  _gameplay')">
+                                                    Gameplay
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="video" id="talkie_gameplay">
+                                        <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
                             </section>
 
 
@@ -156,6 +233,36 @@
 
                                     <div class="dot first"></div>
                                     <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+
+                                </div>
+                                <h3>Wild West Saloon</h3>
+
+                                <div class="art_project shadow" data-key="saloon">
+
+                                    <div class="dot first"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+
+                                </div>
+
+
+                                <h3>Timeless World-Concept Art</h3>
+
+                                <div class="art_project shadow" data-key="timeless_world">
+
+                                    <div class="dot first"></div>
+
+
+                                </div>
+                                <h3>Gameboy-Game Ready</h3>
+
+                                <div class="art_project shadow" data-key="gameboy">
+
+                                    <div class="dot first"></div>
                                     <div class="dot"></div>
                                     <div class="dot"></div>
 
@@ -222,7 +329,7 @@
 
                                     <li><h5>Modelado 3D</h5></li>
                                     <li><h5>Programación Orientada a eventos</h5></li>
-                                    <li><h5>Networking con Photon</h5></li>
+                                    <li><h5>Networking con Photon (RPC,Eventos, sincronizacion) </h5></li>
                                     <li><h5>Patrones de diseño para videojuegos</h5></li>
                                     <li><h5>Fisica y trigonometría</h5></li>
                                     <li><h5>Manejo de git</h5></li>

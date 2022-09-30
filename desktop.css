@@ -54,10 +54,20 @@ header{
     position:absolute;
     width: 92vw;
     max-width: 960px;
-    height: 8000px;
+    height: 10000px;
     border-left: 1px solid rgba(129, 129, 129, 0.14);
     border-right: 1px solid rgba(129, 129, 129, 0.14);
     z-index: -1;
+
+}
+.menu_side{
+    display: none;
+
+}
+.show_menu{
+
+    display: none;
+
 
 }
 .game_tools {
