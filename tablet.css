@@ -1,11 +1,11 @@
-
-.name{
+.name {
     position: relative;
     left: 80px;
-  width: auto;
+    width: auto;
     order: -1;
     align-items: flex-start;
 }
+
 .menu_hamburger {
     margin-left: 0;
     margin-right: 40px;
@@ -13,26 +13,24 @@
     width: 60px;
     height: 60px;
 }
-.portfolio_label{
+
+.portfolio_label {
     left: 12px;
     font-size: 23px;
-
 }
+
 .name h1 {
     font-family: 'Alatsi', sans-serif;
     color: var(--main-txt-color);
     font-size: 33px;
-
-
 }
 
-header{
+header {
     display: flex;
-
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.options_bar button{
+.options_bar button {
     width: auto;
     height: 40px;
     border: none;
@@ -42,20 +40,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-.options button h3{
+
+.options button h3 {
     border-bottom: none;
 }
-button h3{
+
+button h3 {
     width: auto;
     border-bottom: 4px solid var(--1-color);
-
 }
 
-.tools{
+.tools {
     bottom: 0px;
 }
+
 .about_me {
     width: 100%;
     flex-direction: row;
@@ -64,22 +63,17 @@ button h3{
     background-color: var(--2-color);
     margin: 0 auto;
     margin-bottom: 20px;
-
-
 }
 
-
 .game_tools {
-
     margin-bottom: 40px;
     margin-top: 10px;
 }
 
-.description{
+.description {
     order: -1;
-    width:50%;
+    width: 50%;
     max-width: 400px;
-
 }
 
 p {
@@ -87,11 +81,11 @@ p {
     font-size: 20px;
 }
 
-.menu{
+.menu {
     width: 45px;
     height: 45px;
 }
 
-.menu_hamburger{
+.menu_hamburger {
     right: 20px;
 }

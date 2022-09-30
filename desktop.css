@@ -1,53 +1,55 @@
-
-header{
+header {
     position: relative;
     margin-bottom: 40px;
     justify-content: center;
     z-index: 0;
 }
-.name{
+
+.name {
     position: relative;
     left: 0;
 }
 
-.menu_hamburger{
+.menu_hamburger {
     display: none;
 }
-main{
-    top: 0px;
 
+main {
+    top: 0px;
 }
-.options_bar button{
+
+.options_bar button {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.about_me{
+
+.about_me {
     max-width: 800px;
     background-color: transparent;
     margin-top: 60px;
     margin: 0 auto;
 }
 
-.description{
+.description {
     max-width: 900px;
-    width:52%;
-
+    width: 52%;
 }
+
 .poster_img {
     transition: all 0.4s;
-
     padding: 30px;
 }
-.project_info{
+
+.project_info {
     width: 59%;
     height: 300px;
-
     justify-content: space-between;
 }
-.options_bar{
+
+.options_bar {
     display: flex;
     width: 60vw;
     max-width: 520px;
@@ -55,77 +57,78 @@ main{
     justify-content: center;
     align-items: flex-end;
 }
-.line{
+
+.line {
     display: flex;
-    position:absolute;
+    position: absolute;
     width: 92vw;
     max-width: 960px;
     height: 12000px;
     border-left: 1px solid rgba(129, 129, 129, 0.14);
     border-right: 1px solid rgba(129, 129, 129, 0.14);
     z-index: -1;
-
 }
-.menu_side{
+
+.menu_side {
     display: none;
-
 }
-.show_menu{
 
+.show_menu {
     display: none;
-
-
 }
+
 .game_tools {
-
-    flex-direction:row ;
-
+    flex-direction: row;
 }
-.category_label h2 {
 
+.category_label h2 {
     position: relative;
     left: 20px;
-
-
 }
-.group_tools{
+
+.group_tools {
     align-items: center;
     justify-content: center;
     width: 68vw;
     max-width: 700px;
 }
-.game_tools  h3{
 
+.game_tools h3 {
     width: 180px;
 }
-.all_tools{
+
+.all_tools {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.options_bar h3{
+
+.options_bar h3 {
     font-size: min(max(12px, 3vw), 19px);
     border-bottom: 4px solid rgba(124, 113, 105, 0.35);
     transition: all 0.3s;
 }
-.options_bar h3:hover{
+
+.options_bar h3:hover {
     cursor: pointer;
     font-size: min(max(12px, 3vw), 22px);
     border-bottom: 4px solid var(--1-color)
-
 }
-.profile_picture{
+
+.profile_picture {
     max-width: 300px;
     max-height: 300px;
     position: relative;
     right: 20px;
 }
-.profile_image{
+
+.profile_image {
     max-width: 340px;
     max-height: 340px;
     bottom: 10px;
 }
+
 .cv_btn {
     position: relative;
     margin-top: 0;
@@ -133,7 +136,8 @@ main{
     top: 20px;
     transition: all 0.4s;
 }
-.cv_btn:hover{
+
+.cv_btn:hover {
     cursor: pointer;
     max-width: 340px;
     max-height: 50px;

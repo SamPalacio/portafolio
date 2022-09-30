@@ -1,524 +1,546 @@
-        <!DOCTYPE html>
-        <html lang="es">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>Portafolio</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="main.css">
-                    <link rel="stylesheet" href="./tablet.css" media="(min-width: 600px)"/>
-                    <link rel="stylesheet" href="./desktop.css" media="(min-width: 820px)" />
+<!DOCTYPE html>
+<html lang="es">
 
-                </head>
-                <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./tablet.css" media="(min-width: 600px)" />
+    <link rel="stylesheet" href="./desktop.css" media="(min-width: 820px)" />
 
-                <header>
-                        <div class="line shadow"></div>
-                        <div class="name">
-                            <h2 class="portfolio_label">Portafolio</h2>
-                            <h1>Samuel Palacio</h1>
-                        </div>
+</head>
+
+<body>
+
+    <header>
+        <div class="line shadow"></div>
+        <div class="name">
+            <h2 class="portfolio_label">Portafolio</h2>
+            <h1>Samuel Palacio</h1>
+        </div>
 
 
-                        <button class="menu_hamburger">
+        <button class="menu_hamburger">
                             <img class="menu" src="src/icons/menu.png" alt="">
                         </button>
 
-                            <div class="menu_side ">
+        <div class="menu_side ">
 
-                                <div class="close"></div>
-                                <div class="options">
-                                    <button data-key="videogames">
+            <div class="close"></div>
+            <div class="options">
+                <button data-key="videogames">
                                         <h3>Videojuegos</h3>
                                     </button>
-                                    <button data-key="art">
+                <button data-key="art">
                                         <h3>Arte</h3>
                                     </button>
-                                    <button data-key="animation">
+                <button data-key="animation">
                                         <h3>Animación</h3>
                                     </button>
-                                    <button data-key="contact">
+                <button data-key="contact">
                                         <h3>Contacto</h3>
                                     </button>
-                                </div>
+            </div>
 
-                            </div>
+        </div>
 
 
-                        <div class="options_bar">
+        <div class="options_bar">
 
-                            <button data-key="videogames">
+            <button data-key="videogames">
                                 <h3>Videojuegos</h3>
                             </button>
 
-                            <button data-key="art">
+            <button data-key="art">
                                 <h3>Arte</h3>
                             </button>
 
-                            <button data-key="animation">
+            <button data-key="animation">
                                 <h3>Animación</h3>
                             </button>
 
-                            <button data-key="contact">
+            <button data-key="contact">
                                 <h3>Contacto</h3>
                             </button>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="about_me">
+            <div class="description">
+                <p>
+                    Estudiante de Ingeniería en diseño de entretenimiento digital con énfasis en creación y desarrollo de videojuegos y contenidos web(Front-end)
+                </p>
+                <div class="cv_btn shadow">
+
+                    <a class="cv">
+                        <h3>Más Sobre mi</h3>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="profile_picture shadow">
+                <img class="profile_image" src="src/imgs/mainpicture.png" alt="profile_picture">
+            </div>
+        </section>
+
+
+
+
+        <section class="projects">
+
+            <h1 class="tools_label">Mis proyectos</h1>
+            <div class="category_label" data-key="videogames">
+                <h2>
+                    Videojuegos
+                </h2>
+            </div>
+
+            <section class="videogames_projects">
+
+                <div class="project shadow">
+
+                    <div class="videogame_project ">
+
+                        <div class="poster shadow ">
+                            <div class="poster_img" id="froggoPoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="project_description blur ">
+                                    <p>Froog </p>
+
+                                </div>
+                            </div>
+
+
                         </div>
-
-                    </header>
-
-                    <main>
-                        <section class="about_me">
-                            <div class="description">
-                                <p>
-                                    Estudiante de Ingeniería en diseño de entretenimiento digital con énfasis en creación y desarrollo de
-                                    videojuegos y contenidos web(Front-end)
-                                </p>
-                                <div class="cv_btn shadow">
-
-                                    <a class="cv" ><h3>Más Sobre mi</h3></a>
-
-
-                                </div>
-                            </div>
-
-                            <div class="profile_picture shadow">
-                                <img class="profile_image" src="src/imgs/mainpicture.png" alt="profile_picture">
-                            </div>
-                        </section>
-
-
-
-
-                        <section class="projects">
-
-                            <h1 class="tools_label">Mis proyectos</h1>
-                            <div class="category_label" data-key="videogames">
-                                <h2>
-                                    Videojuegos
-                                </h2>
-                            </div>
-
-                            <section class="videogames_projects">
-
-                                <div class="project shadow">
-
-                                    <div class="videogame_project ">
-
-                                        <div class="poster shadow ">
-                                            <div class="poster_img" id="froggoPoster" onmouseenter="show_description(this)"
-                                                 onmouseleave="show_description(this)">
-                                                <div class="project_description blur ">
-                                                    <p>Froog </p>
-
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="project_info">
-
-                                            <h2>Froggo Jump!</h2>
-                                            <p>Responsabilidades:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>
-                                                        Físicas para el salto de la rana.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        Sincronización de leaderboard
-                                                    </p>
-                                                </li>
-
-                                                <li>
-                                                    <p>
-                                                        Animación de la rana
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                            <div class="project_btns">
-
-
-                                                <button class="project_btn shadow">
-                                                    APK
-                                                </button>
-                                                <button class="project_btn shadow" onclick="show_video('frog_gameplay')">
-                                                    Gameplay
-                                                </button>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="video" id="frog_gameplay">
-                                        <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-
-                                    </div>
-                                </div>
-                                <div class="project shadow">
-
-                                    <div class="videogame_project ">
-
-                                        <div class="poster shadow ">
-                                            <div class="poster_img" id="talkiePoster" onmouseenter="show_description(this)"
-                                                 onmouseleave="show_description(this)">
-                                                <div class="project_description blur "></div>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="project_info">
-
-                                            <h2>Talkie Camp</h2>
-                                            <p>Responsabilidades:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>
-                                                        Networking con photon
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        Desarollo minijuegos
-                                                    </p>
-                                                </li>
-
-                                                <li>
-                                                    <p>
-                                                        Progración UI
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                            <div class="project_btns">
-
-
-                                                <button class="project_btn shadow">
-                                                    APK
-                                                </button>
-                                                <button class="project_btn shadow" onclick="show_video('talkiecamp_gameplay')">
-                                                    Gameplay
-                                                </button>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="video" id="talkiecamp_gameplay">
-                                        <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player"
-                                                allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-
-                                    </div>
-                                </div>
-                                <div class="project shadow">
-
-                                    <div class="videogame_project ">
-
-                                        <div class="poster shadow" >
-                                            <div class="poster_img" id="phantomizedPoster" onmouseenter="show_description(this)"
-                                                 onmouseleave="show_description(this)">
-                                                <div class="project_description blur "></div>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="project_info">
-
-                                            <h2>Phantomized</h2>
-                                            <p>Responsabilidades:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>
-                                                        Interacción con objetos
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        Integración google cardboard
-                                                    </p>
-                                                </li>
-
-                                                <li>
-                                                    <p>
-                                                        Sistema de objetivos y misiones
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                            <div class="project_btns">
-
-
-                                                <button class="project_btn shadow">
-                                                    APK
-                                                </button>
-                                                <button class="project_btn shadow" onclick="show_video('phantomized_gameplay')">
-                                                    Gameplay
-                                                </button>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="video" id="phantomized_gameplay">
-                                        <iframe src="https://www.youtube.com/embed/QGSxjHldvB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                                    </div>
-                                </div>
-                            </section>
-
-
-                            <section class="art_projects">
-
-                                <div class="category_label" data-key="art">
-                                    <h2>
-                                        Arte
-                                    </h2>
-                                </div>
-
-
-                                <h3>MP40 Gun-Game Ready</h3>
-
-                                <div class="art_project shadow" data-key="mp40">
-
-                                    <div class="dot first"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-
-                                </div>
-                                <h3>Wild West Saloon</h3>
-
-                                <div class="art_project shadow" data-key="saloon">
-
-                                    <div class="dot first"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-
-                                </div>
-
-
-                                <h3>Timeless World-Concept Art</h3>
-
-                                <div class="art_project shadow" data-key="timeless_world">
-
-                                    <div class="dot first"></div>
-
-
-                                </div>
-                                <h3>Gameboy-Game Ready</h3>
-
-                                <div class="art_project shadow" data-key="gameboy">
-
-                                    <div class="dot first"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-
-                                </div>
-                            </section>
-
-
-                            <section class="animation_projects">
-                                <div class="category_label" data-key="animation">
-                                    <h2>
-                                        Animación
-                                    </h2>
-                                </div>
-
-                                <h3>Reel</h3>
-                                <iframe class="shadow"src="https://www.youtube.com/embed/32FqOhIYx58"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                            </section>
-
-
-                            <section class="about_sam">
-
-                                    <h2>
-                                        Más sobre mi
-                                    </h2>
-
-
-                                <h1>Samuel Angel Palacio Mesa</h1>
-
-                                <h4>Estudiante en Ingeniería en diseño de entretenimiento digital</h4>
+                        <div class="project_info">
+
+                            <h2>Froggo Jump!</h2>
+                            <p>Responsabilidades:</p>
+                            <ul>
+                                <li>
                                     <p>
-                                        Soy apasionado por los contenidos de entretenimiento digital como videojuegos, series y películas. Además, muy curioso en cómo estos son desarrollados. Estoy en busca de la primera experencia laboral que me permita tanto  aprender de otras personas como reflejar mis conocimientos y contribuir en la realización de proyectos.
+                                        Físicas para el salto de la rana.
                                     </p>
-                                <h2>
-                                    Habilidades Blandas
-                                </h2>
+                                </li>
+                                <li>
+                                    <p>
+                                        Sincronización de leaderboard
+                                    </p>
+                                </li>
 
-                                <p class="center_text">Me destaco por ser una persona con las siguientes habilidades</p>
+                                <li>
+                                    <p>
+                                        Animación de la rana
+                                    </p>
+                                </li>
+                            </ul>
 
-
-
-                                <ul>
-                                    <li><h5>Trabajo en equipo</h5></li>
-                                    <li><h5>Pasión por aprender</h5></li>
-
-                                    <li><h5>Liderazgo</h5></li>
-                                    <li><h5>Resolución de problemas</h5></li>
-                                    <li><h5>Orientación al logro</h5></li>
-                                    <li><h5>Creatividad</h5></li>
-
-                                </ul>
-                                <h2>
-                                    Conocimientos técnicos
-                                </h2>
+                            <div class="project_btns">
 
 
+                                <button class="project_btn shadow">
+                                                    APK
+                                                </button>
+                                <button class="project_btn shadow" onclick="show_video('frog_gameplay')">
+                                                    Gameplay
+                                                </button>
+                            </div>
 
 
-                                <ul>
-                                    <li><h5>Desarrollo de videojuegos y web (front-end)</h5></li>
-                                    <li><h5>Programación Orientada a objetos</h5></li>
+                        </div>
+                    </div>
+                    <div class="video" id="frog_gameplay">
+                        <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                                    <li><h5>Modelado 3D</h5></li>
-                                    <li><h5>Programación Orientada a eventos</h5></li>
-                                    <li><h5>Networking con Photon (RPC,Eventos, sincronizacion) </h5></li>
-                                    <li><h5>Patrones de diseño para videojuegos</h5></li>
-                                    <li><h5>Fisica y trigonometría</h5></li>
-                                    <li><h5>Manejo de git</h5></li>
+                    </div>
+                </div>
+                <div class="project shadow">
 
-                                </ul>
-                            </section>
+                    <div class="videogame_project ">
 
-
-                            <section class="tools">
-
-
-                                <h1 class="tools_label">Herramientas</h1>
-
-                                <div class="all_tools">
+                        <div class="poster shadow ">
+                            <div class="poster_img" id="talkiePoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="project_description blur "></div>
+                            </div>
 
 
-                                    <div class="game_tools">
-                                        <h3>Game Dev</h3>
+                        </div>
+                        <div class="project_info">
 
-                                        <div class="group_tools">
+                            <h2>Talkie Camp</h2>
+                            <p>Responsabilidades:</p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Networking con photon
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Desarollo minijuegos
+                                    </p>
+                                </li>
 
-                                      <span class="tool">
+                                <li>
+                                    <p>
+                                        Progración UI
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="project_btns">
+
+
+                                <button class="project_btn shadow">
+                                                    APK
+                                                </button>
+                                <button class="project_btn shadow" onclick="show_video('talkiecamp_gameplay')">
+                                                    Gameplay
+                                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="video" id="talkiecamp_gameplay">
+                        <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player" allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <div class="project shadow">
+
+                    <div class="videogame_project ">
+
+                        <div class="poster shadow">
+                            <div class="poster_img" id="phantomizedPoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="project_description blur "></div>
+                            </div>
+
+
+                        </div>
+                        <div class="project_info">
+
+                            <h2>Phantomized</h2>
+                            <p>Responsabilidades:</p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Interacción con objetos
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Integración google cardboard
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        Sistema de objetivos y misiones
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="project_btns">
+
+
+                                <button class="project_btn shadow">
+                                                    APK
+                                                </button>
+                                <button class="project_btn shadow" onclick="show_video('phantomized_gameplay')">
+                                                    Gameplay
+                                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="video" id="phantomized_gameplay">
+                        <iframe src="https://www.youtube.com/embed/QGSxjHldvB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="art_projects">
+
+                <div class="category_label" data-key="art">
+                    <h2>
+                        Arte
+                    </h2>
+                </div>
+
+
+                <h3>MP40 Gun-Game Ready</h3>
+
+                <div class="art_project shadow" data-key="mp40">
+
+                    <div class="dot first"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+
+                </div>
+                <h3>Wild West Saloon</h3>
+
+                <div class="art_project shadow" data-key="saloon">
+
+                    <div class="dot first"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+
+                </div>
+
+
+                <h3>Timeless World-Concept Art</h3>
+
+                <div class="art_project shadow" data-key="timeless_world">
+
+                    <div class="dot first"></div>
+
+
+                </div>
+                <h3>Gameboy-Game Ready</h3>
+
+                <div class="art_project shadow" data-key="gameboy">
+
+                    <div class="dot first"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+
+                </div>
+            </section>
+
+
+            <section class="animation_projects">
+                <div class="category_label" data-key="animation">
+                    <h2>
+                        Animación
+                    </h2>
+                </div>
+
+                <h3>Reel</h3>
+                <iframe class="shadow" src="https://www.youtube.com/embed/32FqOhIYx58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+
+            <section class="about_sam">
+
+                <h2>
+                    Más sobre mi
+                </h2>
+
+
+                <h1>Samuel Angel Palacio Mesa</h1>
+
+                <h4>Estudiante en Ingeniería en diseño de entretenimiento digital</h4>
+                <p>
+                    Soy apasionado por los contenidos de entretenimiento digital como videojuegos, series y películas. Además, muy curioso en cómo estos son desarrollados. Estoy en busca de la primera experencia laboral que me permita tanto aprender de otras personas como
+                    reflejar mis conocimientos y contribuir en la realización de proyectos.
+                </p>
+                <h2>
+                    Habilidades Blandas
+                </h2>
+
+                <p class="center_text">Me destaco por ser una persona con las siguientes habilidades</p>
+
+
+
+                <ul>
+                    <li>
+                        <h5>Trabajo en equipo</h5>
+                    </li>
+                    <li>
+                        <h5>Pasión por aprender</h5>
+                    </li>
+
+                    <li>
+                        <h5>Liderazgo</h5>
+                    </li>
+                    <li>
+                        <h5>Resolución de problemas</h5>
+                    </li>
+                    <li>
+                        <h5>Orientación al logro</h5>
+                    </li>
+                    <li>
+                        <h5>Creatividad</h5>
+                    </li>
+
+                </ul>
+                <h2>
+                    Conocimientos técnicos
+                </h2>
+
+
+
+
+                <ul>
+                    <li>
+                        <h5>Desarrollo de videojuegos y web (front-end)</h5>
+                    </li>
+                    <li>
+                        <h5>Programación Orientada a objetos</h5>
+                    </li>
+
+                    <li>
+                        <h5>Modelado 3D</h5>
+                    </li>
+                    <li>
+                        <h5>Programación Orientada a eventos</h5>
+                    </li>
+                    <li>
+                        <h5>Networking con Photon (RPC,Eventos, sincronizacion) </h5>
+                    </li>
+                    <li>
+                        <h5>Patrones de diseño para videojuegos</h5>
+                    </li>
+                    <li>
+                        <h5>Fisica y trigonometría</h5>
+                    </li>
+                    <li>
+                        <h5>Manejo de git</h5>
+                    </li>
+
+                </ul>
+            </section>
+
+
+            <section class="tools">
+
+
+                <h1 class="tools_label">Herramientas</h1>
+
+                <div class="all_tools">
+
+
+                    <div class="game_tools">
+                        <h3>Game Dev</h3>
+
+                        <div class="group_tools">
+
+                            <span class="tool">
                                             <img src="src/icons/cicon.png" alt="c# icon">
                                             <h4>c#</h4>
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/unity_icon.png" alt="Unity icon">
                                             <h4>Unity</h4>
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/maya_icon.png" alt="Maya icon">
                                             <h4>Maya</h4>
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/blender_icon.png" alt="Blender icon">
                                             <h4>Blender</h4>
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/substance.png" alt="Substance icon">
                                             <h4>Substance</h4>
                                         </span>
 
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/photonicon.png" alt="html icon">
                                             <h4>Photon</h4>
 
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/firebaseicon.png" alt="css icon">
                                             <h4>Firebase</h4>
 
                                         </span>
-                                        </div>
+                        </div>
 
-                                    </div>
+                    </div>
 
 
 
-                                    <div class="game_tools">
-                                        <h3>Web dev</h3>
+                    <div class="game_tools">
+                        <h3>Web dev</h3>
 
-                                        <div class="group_tools">
-                                    <span class="tool">
+                        <div class="group_tools">
+                            <span class="tool">
                                             <img src="src/icons/html_icon.png" alt="html icon">
                                             <h4>HTML</h4>
 
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/css_icon.png" alt="css icon">
                                             <h4>CSS</h4>
 
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/js_icon.png" alt="javascript icon">
                                            <h4>Javascript</h4>
 
                                         </span>
-                                        </div>
+                        </div>
 
 
 
 
-                                    </div>
+                    </div>
 
 
 
-                                    <div class="game_tools">
-                                        <h3>Diseño y video</h3>
+                    <div class="game_tools">
+                        <h3>Diseño y video</h3>
 
-                                        <div class="group_tools">
-                                   <span class="tool">
+                        <div class="group_tools">
+                            <span class="tool">
                                             <img src="src/icons/photoshop_icon.png" alt="Photoshop icon">
                                             <h4>Photoshop</h4>
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/premire_icon.png" alt="Premiere icon">
                                             <h4>Premiere</h4>
                                         </span>
-                                            <span class="tool">
+                            <span class="tool">
                                             <img src="src/icons/figma_icon.png" alt="Figma icon">
                                             <h4>Figma</h4>
                                         </span>
-                                        </div>
+                        </div>
 
 
 
-                                    </div>
+                    </div>
 
-                                </div>
-
-
-
-                            </section>
+                </div>
 
 
-                        </section>
 
-                    </main>
+            </section>
 
-                    <footer>
-                        <section class="contact_info">
-                            <div class="category_label" data-key="contact"></div>
-                               <h2>Contáctame</h2>
-                                <h3>samuel.angel1709@gmail.com</h3>
-                            <button class="whatsapp_btn shadow">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="contact_info">
+            <div class="category_label" data-key="contact"></div>
+            <h2>Contáctame</h2>
+            <h3>samuel.angel1709@gmail.com</h3>
+            <button class="whatsapp_btn shadow">
                                 <h2>+57 3041055606</h2>
                             </button>
 
-                            <div class="contact_apps">
-                                 <span class="contact_app"><img src="src/icons/linkedin_icon.png" alt="linkedin icon"></span>
-                                 <span class="contact_app"><img src="src/icons/instagram_icon.png" alt="instagram icon"></span>
-                            </div>
-                        </section>
-                    </footer>
+            <div class="contact_apps">
+                <span class="contact_app"><img src="src/icons/linkedin_icon.png" alt="linkedin icon"></span>
+                <span class="contact_app"><img src="src/icons/instagram_icon.png" alt="instagram icon"></span>
+            </div>
+        </section>
+    </footer>
 
-                </body>
-            <script src="main.js"></script>
+</body>
+<script src="main.js"></script>
 
-        </html>
+</html>
