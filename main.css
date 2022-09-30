@@ -33,13 +33,18 @@ p {
 
 header {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    position: fixed;
+    z-index: 2;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-}
+    background-color: var(--main-bg-color);
 
+}
+footer{
+    position: relative;
+    top: 30px;
+}
 .name h1 {
     font-family: 'Alatsi', sans-serif;
     color: var(--main-txt-color);
@@ -137,7 +142,7 @@ header {
     position: fixed;
     justify-content: center;
     align-items: center;
-    background-color: #ffefd7;
+    background-color: transparent;
     border: none;
     margin-left: 20px;
     z-index: 1;
@@ -151,7 +156,10 @@ header {
     cursor: pointer;
 
 }
-
+main{
+    position: relative;
+    top: 90px;
+}
 .about_me {
     display: flex;
     position: relative;
@@ -661,3 +669,6 @@ iframe {
     justify-content: center;
 }
 
+.hide{
+    display: none;
+}

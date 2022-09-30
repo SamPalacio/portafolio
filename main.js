@@ -14,11 +14,25 @@
     const gameboyImages=['src/imgs/gameboyImages/gameboy_1.jpg','src/imgs/gameboyImages/gameboy_2.jpg','src/imgs/gameboyImages/gameboy_3.jpg'];
     const saloonImages=['src/imgs/saloonImages/saloon_1.jpg','src/imgs/saloonImages/saloon_2.jpg','src/imgs/saloonImages/saloon_3.jpg','src/imgs/saloonImages/saloon_4.jpg','src/imgs/saloonImages/saloon_5.jpg'];
     const timeless=['src/imgs/timelessImage/timeless.jpg'];
-
+    let newValue;
+    let oldValue;
 
   init();
 
+    window.addEventListener('scroll', (e) => {
 
+        newValue = window.scrollY;
+        if (oldValue < newValue) {
+            if (window.innerWidth<=820 ){
+                const h =document.querySelector("header");
+                h.classList.add("hide");
+            }
+        } else if (oldValue > newValue) {
+            const h =document.querySelector("header");
+            h.classList.remove("hide");
+        }
+        oldValue = newValue;
+                });
 
   function init(){
       firstDots.forEach(dot => {dot.style.backgroundColor="#e09a2f";})
@@ -48,6 +62,8 @@
       hamburgerBtns.forEach(section=> section.addEventListener("click",fitViewBar))
       cvBtn.addEventListener("click", ()=>{
           document.querySelector(".about_sam").scrollIntoView(); })
+
+
   }
     function  showMenu(){
         console.log(menu_bar)
