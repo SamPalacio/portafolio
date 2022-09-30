@@ -1,13 +1,33 @@
 
 
 
-  let dots =document.querySelectorAll(".dot");
-   dots.forEach(dot=> dot.addEventListener("click",changeImage));
+    let dots =document.querySelectorAll(".dot");
+    let firstDots = document.querySelectorAll(".dot.first");
+    let sectionBtns =document.querySelectorAll(".options_bar button");
+    let cvBtn =document.querySelector(".cv")
 
-   let firstDots = document.querySelectorAll(".dot.first")
 
 
-    firstDots.forEach(dot => {dot.style.backgroundColor="#e09a2f";})
+  init();
+
+
+
+  function init(){
+      firstDots.forEach(dot => {dot.style.backgroundColor="#e09a2f";})
+      dots.forEach(dot=> dot.addEventListener("click",changeImage));
+      sectionBtns.forEach(section=> section.addEventListener("click",fitView))
+      cvBtn.addEventListener("click", ()=>{
+          document.querySelector(".about_sam").scrollIntoView(); })
+  }
+
+    function fitView(){
+        const target=this.dataset.key;
+        console.log(target)
+
+        document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
+
+    }
+
   const mp40Images=['src/imgs/mp40Images/mp40_1.jpg','src/imgs/mp40Images/mp40_2.jpg','src/imgs/mp40Images/mp40_3.jpg','src/imgs/mp40Images/mp40_4.jpg']
 
     function changeImage()

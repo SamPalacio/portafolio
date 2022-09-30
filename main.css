@@ -17,7 +17,11 @@
     --main-txt-color: rgb(69, 63, 59);
     scroll-behavior: smooth;
 }
-
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: min(max(12px, 4vw), 26px);
+    color: var(--main-txt-color);
+}
 body {
     background-color: var(--main-bg-color);
 }
@@ -267,6 +271,8 @@ h3 {
 button h2{
     font-size: min(max(10px, 3.1vw), 22px);
 }
+
+
 .category_label {
     display: flex;
 
@@ -491,8 +497,10 @@ iframe {
 .contact_info{
     width: 100%;
     height: 40vw;
+    max-height: 400px;
+    max-width: 960px;
+    margin: 0 auto;
     background-color:var(--2-color);
-    margin-top: 30px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -525,3 +533,71 @@ iframe {
     align-items: center;
     justify-content: center;
 }
+.about_sam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.about_sam h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: min(max(10px, 2.8vw), 18px);
+    color: var(--main-txt-color);
+    margin: 20px;
+    text-align: center;
+}
+.about_sam h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: min(max(10px, 2.8vw), 16px);
+    color: var(--main-txt-color);
+    text-align: center;
+    margin: 20px;
+
+}
+.about_sam p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: min(max(10px, 3vw), 18px);
+    color: var(--main-txt-color);
+    width: 80vw;
+    text-align: justify;
+    margin-bottom: 20px;
+    max-width: 700px;
+
+}
+
+.about_sam .center_text{
+    text-align: center;
+
+}
+.about_sam h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: min(max(10px, 5vw), 22px);
+    color: var(--main-txt-color);
+    border-bottom: 4px solid var(--1-color);
+    margin: 20px;
+}
+.about_sam ul{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    width:100vw;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+.about_sam li{
+    align-items: center;
+    text-align: center;
+    width: 40vw;
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+}
+
