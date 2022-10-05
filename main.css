@@ -670,3 +670,7 @@ iframe {
     width: 400px;
     height: 50px;
 }
+.bg_y{
+    color: #de992f;
+    font-size: min(max(12px, 5vw), 40px);
+}

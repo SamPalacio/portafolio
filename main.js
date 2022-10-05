@@ -12,6 +12,8 @@
     const  posterFroggo =document.querySelector("#froggoPoster");
     const  posterTalkie=document.querySelector("#talkiePoster");
     const  posterPhantomized =document.querySelector("#phantomizedPoster");
+    const  posterVulcano =document.querySelector("#vulcanoPoster");
+    const apk_froggo = document.querySelector('#froggo_apk');
     const mp40Images=['src/imgs/mp40Images/mp40_1.jpg','src/imgs/mp40Images/mp40_2.jpg','src/imgs/mp40Images/mp40_3.jpg','src/imgs/mp40Images/mp40_4.jpg'];
     const gameboyImages=['src/imgs/gameboyImages/gameboy_1.jpg','src/imgs/gameboyImages/gameboy_2.jpg','src/imgs/gameboyImages/gameboy_3.jpg'];
     const saloonImages=['src/imgs/saloonImages/saloon_1.jpg','src/imgs/saloonImages/saloon_2.jpg','src/imgs/saloonImages/saloon_3.jpg','src/imgs/saloonImages/saloon_4.jpg','src/imgs/saloonImages/saloon_5.jpg'];
@@ -23,9 +25,14 @@
 
 
   function init(){
+
+            apk_froggo.addEventListener('click',()=>{window.open('https://drive.google.com/file/d/1vvnBvQJu5wq6xQKwT_pEeQ6IfJfL37k-/view?usp=sharing', '_blank');
+            })
+
             posterFroggo.style.backgroundImage =  'url("src/imgs/froggo_jump_poster.jpg")';
             posterPhantomized.style.backgroundImage =  'url("src/imgs/phantomizedPoster.jpg")';
             posterTalkie.style.backgroundImage =  'url("src/imgs/talkiecampposter.jpg")';
+             posterVulcano.style.backgroundImage =  'url("src/imgs/volcanes_poster.png")';
 
       window.addEventListener('scroll', (e) => {
 

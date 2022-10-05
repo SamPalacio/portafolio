@@ -1,8 +1,10 @@
 header {
+
     position: relative;
     margin-bottom: 40px;
     justify-content: center;
-    z-index: 0;
+    z-index: 1;
+    top: 0;
 }
 
 .name {
@@ -58,17 +60,19 @@ main {
     align-items: flex-end;
 }
 
-.line {
+
+.page {
     display: flex;
-    position: absolute;
-    width: 92vw;
-    max-width: 960px;
-    height: 12000px;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
     border-left: 1px solid rgba(129, 129, 129, 0.14);
     border-right: 1px solid rgba(129, 129, 129, 0.14);
-    z-index: -1;
-}
 
+}
+.project{
+    margin-top: 30px;
+}
 .menu_side {
     display: none;
 }
@@ -142,3 +146,7 @@ main {
     max-width: 340px;
     max-height: 50px;
 }
+.art_project{
+    margin-bottom: 40px;
+}
+
