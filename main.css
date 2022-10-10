@@ -674,3 +674,9 @@ iframe {
     color: #de992f;
     font-size: min(max(12px, 5vw), 40px);
 }
+
+picture img{
+    width: 60vw;
+    max-width: 400px;
+    border-radius: 20px;
+}
