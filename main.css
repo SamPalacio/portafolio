@@ -696,3 +696,14 @@ a{
     font-size: 20px;
 
 }
+
+.center{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.center-desktop{
+    display: none;
+
+}
