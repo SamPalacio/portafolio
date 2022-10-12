@@ -700,7 +700,7 @@ a{
 .center{
     display: flex;
     font-family: 'Poppins', sans-serif;
-    font-size: min(max(9px, 2.5vw), 14px);
+    font-size: min(max(10px, 2.1vw), 14px);
 
 }
 
