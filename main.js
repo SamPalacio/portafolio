@@ -27,7 +27,7 @@
 
   function init(){
 
-            apk_froggo.addEventListener('click',()=>{window.open('https://drive.google.com/file/d/1YTtxsAMrPlJsXOPLuwSiJw28736P7LI-/view?usp=sharing', '_blank');
+            apk_froggo.addEventListener('click',()=>{window.open('https://drive.google.com/file/d/1-n44Y8wIucrslObeEd_5arjIDLALnbFg/view?usp=sharing', '_blank');
             })
       codeExamplebtns.forEach(btn=>{
           btn.addEventListener('click',()=>{window.open('https://codeexamplebysam.notion.site/Code-Example-Froggo-Jump-7de98a462be144fdb0213adbd99c2332', '_blank');
