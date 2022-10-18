@@ -465,7 +465,7 @@ li {
     font-family: 'Alatsi', sans-serif;
     cursor: pointer;
     transition: all 0.4s;
-    font-size: min(max(9px, 2.2vw), 15px);
+    font-size: min(max(7px, 2.2vw), 15px);
 
 }
 
