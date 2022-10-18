@@ -109,7 +109,7 @@ main {
 }
 
 .options_bar h3 {
-    font-size: min(max(12px, 3vw), 19px);
+    font-size: min(max(12px, 3vw), 17px);
     border-bottom: 4px solid rgba(124, 113, 105, 0.35);
     transition: all 0.3s;
 }

@@ -14,6 +14,7 @@
     const  posterPhantomized =document.querySelector("#phantomizedPoster");
     const  posterVulcano =document.querySelector("#vulcanoPoster");
     const apk_froggo = document.querySelector('#froggo_apk');
+    const codeExamplebtns = document.querySelectorAll('.code-example');
     const mp40Images=['src/imgs/mp40Images/mp40_1.jpg','src/imgs/mp40Images/mp40_2.jpg','src/imgs/mp40Images/mp40_3.jpg','src/imgs/mp40Images/mp40_4.jpg'];
     const gameboyImages=['src/imgs/gameboyImages/gameboy_1.jpg','src/imgs/gameboyImages/gameboy_2.jpg','src/imgs/gameboyImages/gameboy_3.jpg'];
     const saloonImages=['src/imgs/saloonImages/saloon_1.jpg','src/imgs/saloonImages/saloon_2.jpg','src/imgs/saloonImages/saloon_3.jpg','src/imgs/saloonImages/saloon_4.jpg','src/imgs/saloonImages/saloon_5.jpg'];
@@ -28,6 +29,11 @@
 
             apk_froggo.addEventListener('click',()=>{window.open('https://drive.google.com/file/d/1vvnBvQJu5wq6xQKwT_pEeQ6IfJfL37k-/view?usp=sharing', '_blank');
             })
+      codeExamplebtns.forEach(btn=>{
+          btn.addEventListener('click',()=>{window.open('https://codexemplebysam.notion.site/codexemplebysam/Code-Example-Froggo-Jump-7de98a462be144fdb0213adbd99c2332', '_blank');
+          })
+
+      })
 
             posterFroggo.style.backgroundImage =  'url("src/imgs/froggo_jump_poster.jpg")';
             posterPhantomized.style.backgroundImage =  'url("src/imgs/phantomizedPoster.jpg")';
@@ -91,14 +97,14 @@
         const target=this.dataset.key;
         console.log(target)
 
-        document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
+        document.querySelector(` .category_label[data-key=${target}]`)?.scrollIntoView();
 
     }
     function fitViewBar(){
         const target=this.dataset.key;
         console.log(target)
         menu_bar.classList.remove("show_menu")
-        document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
+        document.querySelector(` .category_label[data-key=${target}]`)?.scrollIntoView();
         const h =document.querySelector("header");
         h.classList.add("hide");
     }
@@ -152,4 +158,8 @@
         }
     }
 
+    function show_repo(id_repo){
+
+        window.open('https://github.com/FroggoJump/froggojump')
+    }
 
