@@ -30,7 +30,7 @@
             apk_froggo.addEventListener('click',()=>{window.open('https://drive.google.com/file/d/1vvnBvQJu5wq6xQKwT_pEeQ6IfJfL37k-/view?usp=sharing', '_blank');
             })
       codeExamplebtns.forEach(btn=>{
-          btn.addEventListener('click',()=>{window.open('https://codexemplebysam.notion.site/codexemplebysam/Code-Example-Froggo-Jump-7de98a462be144fdb0213adbd99c2332', '_blank');
+          btn.addEventListener('click',()=>{window.open('https://codeexamplebysam.notion.site/Code-Example-Froggo-Jump-7de98a462be144fdb0213adbd99c2332', '_blank');
           })
 
       })
