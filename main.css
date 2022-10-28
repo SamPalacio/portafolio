@@ -448,7 +448,41 @@ li {
     position: relative;
     right: 20px;
 }
+.web-project{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    background-color: var(--2-color);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.web-project picture{
+    margin: 30px;
+
+}
+
+.web-project a{
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    color: #f5ead3;
+    background-color: #e09a2f;
+    text-decoration: none;
+    padding: 5px;
+}
+.web-project picture img{
+    height: 50vw;
+    width: 80vw;
+    max-width: 600px;
+    max-height: 340px;
+}
 .project_btns {
     display: flex;
     justify-content: space-evenly;
@@ -507,7 +541,7 @@ iframe {
     justify-content: center;
 }
 
-.art_projects {
+.art_projects, .web-projects {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -515,6 +549,11 @@ iframe {
     align-items: center;
 }
 
+.web-project img {
+    margin: 20px;
+    width: 500px;
+    border-radius: 10px;
+}
 .art_project {
     display: flex;
     position: relative;

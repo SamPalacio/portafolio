@@ -53,8 +53,8 @@ main {
 
 .options_bar {
     display: flex;
-    width: 60vw;
-    max-width: 520px;
+    width: 65vw;
+    max-width: 580px;
     height: 80px;
     justify-content: center;
     align-items: flex-end;
@@ -109,7 +109,7 @@ main {
 }
 
 .options_bar h3 {
-    font-size: min(max(12px, 3vw), 17px);
+    font-size: min(max(12px, 3vw), 16px);
     border-bottom: 4px solid rgba(124, 113, 105, 0.35);
     transition: all 0.3s;
 }
