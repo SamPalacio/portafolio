@@ -81,11 +81,23 @@ p {
     font-size: 20px;
 }
 
-.menu {
-    width: 45px;
-    height: 45px;
-}
-
 .menu_hamburger {
     right: 20px;
+}
+
+.menu_side {
+    top: 100px;
+}
+
+.line1.toggle_burguer {
+    rotate: -45deg;
+}
+
+.line2.toggle_burguer {
+    display: none;
+    background-color: transparent;
+}
+
+.line3.toggle_burguer {
+    rotate: 45deg;
 }
