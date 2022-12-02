@@ -164,5 +164,23 @@ function show_video(id_video) {
 
 function show_repo(id_repo) {
 
-    window.open('https://github.com/FroggoJump/froggojump')
+    if (id_repo == 'froggojump') {
+        window.open('https://github.com/FroggoJump/froggojump')
+    }
+    if (id_repo == 'talkiecamp') {
+        window.open('https://github.com/mindfulentertainment/talkiecamp')
+    }
+}
+
+function show_apk(apk) {
+
+    if (apk == 'froggojump') {
+        window.open('https://github.com/FroggoJump/froggojump')
+    }
+    if (apk == 'talkiecamp') {
+        window.open('https://drive.google.com/file/d/11KZK2yW-JZmrxIhO9uKEszGyk2tBUwLV/view?usp=sharing')
+    }
+    if (apk == 'phantomized') {
+        window.open('https://drive.google.com/file/d/1sKod7hE99BDXOminmmi9DALsm-3pHK-Q/view?usp=sharing')
+    }
 }

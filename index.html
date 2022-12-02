@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio</title>
+    <title>MyPortfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./tablet.css" media="(min-width: 600px)" />
@@ -18,7 +18,7 @@
         <header>
             <div class="line shadow"></div>
             <div class="name">
-                <h2 class="portfolio_label">Portafolio</h2>
+                <h2 class="portfolio_label">Portfolio</h2>
                 <h1>Samuel Palacio</h1>
             </div>
 
@@ -34,19 +34,19 @@
                 <div class="close"></div>
                 <div class="options">
                     <button data-key="videogames">
-                     <h3>Videojuegos</h3>
+                     <h3>Videogames</h3>
                  </button>
                     <button data-key="web">
                      <h3>Web</h3>
                  </button>
                     <button data-key="art">
-                     <h3>Arte</h3>
+                     <h3>3D Art</h3>
                  </button>
                     <button class="code-example" data-key="code-example">
                      <h3>Code example</h3>
                  </button>
                     <button data-key="contact">
-                     <h3>Contacto</h3>
+                     <h3>Contact</h3>
                  </button>
 
                 </div>
@@ -57,13 +57,13 @@
             <div class="options_bar">
 
                 <button data-key="videogames">
-                 <h3>Videojuegos</h3>
+                 <h3>Videogames</h3>
              </button>
                 <button data-key="web">
                  <h3>Web</h3>
              </button>
                 <button data-key="art">
-                 <h3>Arte</h3>
+                 <h3>3D Art</h3>
              </button>
 
                 <button class="code-example">
@@ -71,7 +71,7 @@
              </button>
 
                 <button data-key="contact">
-                 <h3>Contacto</h3>
+                 <h3>Contact</h3>
              </button>
 
 
@@ -83,12 +83,11 @@
             <section class="about_me">
                 <div class="description">
                     <p>
-                        Estudiante de Ingeniería en diseño de entretenimiento digital con énfasis en creación y desarrollo de videojuegos y contenidos web(Front-end)
-                    </p>
+                        Engineering student in digital entertainment design with strong passion and skills in <strong>videogames and web development</strong> </p>
                     <div class="cv_btn shadow">
 
                         <a class="cv">
-                            <h3>Más sobre mí</h3>
+                            <h3>About me</h3>
                         </a>
 
 
@@ -105,10 +104,10 @@
 
             <section class="projects">
 
-                <h1 class="tools_label">Mis proyectos</h1>
+                <h1 class="tools_label">My projects</h1>
                 <div class="category_label" data-key="videogames">
                     <h2>
-                        Videojuegos
+                        Videogames
                     </h2>
                 </div>
 
@@ -131,27 +130,27 @@
                             <div class="project_info">
 
                                 <h2>Froggo Jump!</h2>
-                                <h5>Juego mobile-casual</h5>
+                                <h5>Mobile-casual videogame</h5>
                                 <button class="code-example" data-key="code-example">
-                                 <h4>Ver code example</h4>
+                                 <h4>Code example</h4>
                              </button>
 
-                                <p>Responsabilidades:</p>
+                                <p>Features I made:</p>
                                 <ul>
                                     <li>
                                         <p>
-                                            Físicas para el salto de la rana.
+                                            Jump physics
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Sincronización de leaderboard
+                                            Leaderboard synchronization
                                         </p>
                                     </li>
 
                                     <li>
                                         <p>
-                                            Animación de la rana
+                                            Frog animation
                                         </p>
                                     </li>
                                 </ul>
@@ -166,7 +165,7 @@
                                      Gameplay
                                  </button>
                                     <button class="project_btn shadow" onclick="show_repo('froggojump')">
-                                     Repositorio
+                                     GitHub
                                  </button>
                                 </div>
 
@@ -192,40 +191,44 @@
                             <div class="project_info">
 
                                 <h2>Talkie Camp</h2>
-                                <h5>Mobile-Cooperativo online</h5>
-                                <p>Responsabilidades:</p>
+                                <h5>Mobile-Multiplayer online</h5>
+                                <p>Features I made</p>
                                 <ul>
                                     <li>
                                         <p>
-                                            Networking con photon
+                                            Networking with photon
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Desarollo minijuegos
-                                        </p>
-                                    </li>
-
-                                    <li>
-                                        <p>
-                                            Programación UI
+                                            Minigame development
                                         </p>
                                     </li>
 
                                     <li>
                                         <p>
-                                            Persistencia del estado del juego con json
+                                            UI Programming
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Data persistence with JSON
                                         </p>
                                     </li>
                                 </ul>
 
                                 <div class="project_btns">
-
-
+                                    <button class="project_btn shadow" onclick="show_apk('talkiecamp')">
+                                        APK
+                                    </button>
 
                                     <button class="project_btn shadow" onclick="show_video('talkiecamp_gameplay')">
                                      Gameplay
                                  </button>
+                                    <button class="project_btn shadow" onclick="show_repo('talkiecamp')">
+                                    GitHub
+                                </button>
                                 </div>
 
 
@@ -250,19 +253,19 @@
                             </div>
                             <div class="project_info">
 
-                                <h2>Volcanes: Experiencia AR</h2>
+                                <h2>Volcano: AR Experience</h2>
                                 <h5>Mobile-AR</h5>
 
-                                <p>Responsabilidades:</p>
+                                <p>Responsible of:</p>
                                 <ul>
                                     <li>
                                         <p>
-                                            Interacción con el volcán
+                                            Volcano interaction
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Programación UI
+                                            UI Programming
                                         </p>
                                     </li>
 
@@ -299,30 +302,33 @@
                                 <h2>Phantomized</h2>
                                 <h5>PC-Google Cardboard</h5>
 
-                                <p>Responsabilidades:</p>
+                                <p>Responsible of:</p>
                                 <ul>
                                     <li>
                                         <p>
-                                            Interacción con objetos
+                                            Object interaction
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Integración google cardboard
+                                            Google cardboard integration
                                         </p>
                                     </li>
 
                                     <li>
                                         <p>
-                                            Sistema de objetivos y misiones
+                                            Quest and challenge system
                                         </p>
                                     </li>
+
                                 </ul>
 
                                 <div class="project_btns">
 
 
-
+                                    <button class="project_btn shadow" onclick="show_apk('talkiecamp')">
+                                        Windows .exe
+                                    </button>
                                     <button class="project_btn shadow" onclick="show_video('phantomized_gameplay')">
                                      Gameplay
                                  </button>
@@ -349,25 +355,25 @@
                     <div class="web-project shadow">
 
 
-                        <h1 class="line-web">Portafolio</h1>
-                        <p>Realicé mi portafolio</p>
+                        <h1 class="line-web">Portfolio</h1>
+                        <p>I made my own portfolio</p>
                     </div>
-
                     <div class="web-project shadow">
+
+
+                        <h1 class="line-web">Online trivia game</h1>
+                        <p>Inspired by kahoot I made this project using HTML, CSS, Javascript and firebase</p>
+                        <a target="_blank" href="https://sampalacio.github.io/RetoJS_Bootstrap/">Link</a>
+                    </div>
+                    <!-- <div class="web-project shadow">
 
 
                         <h1 class="line-web">Resumen del entretenimiento</h1>
                         <p>Permite consultar detalladamente el resumen de una película o serie. Para este proyecto consumi una API de entretenimiento llamada IMDB y usé Bootstrap para el estilizado</p>
                         <a target="_blank" href="https://sampalacio.github.io/Entregajs_API_IMDB/">Ver página</a>
-                    </div>
-
-                    <div class="web-project shadow">
+                    </div> -->
 
 
-                        <h1 class="line-web">Cálculo de nota final necesaria</h1>
-                        <p>Réplica de la página ¿cuánto necesito para el final?</p>
-                        <a target="_blank" href="https://sampalacio.github.io/RetoJS_Bootstrap/">Ver página</a>
-                    </div>
 
 
                 </section>
@@ -376,7 +382,7 @@
 
                     <div class="category_label" data-key="art">
                         <h2>
-                            Arte para videojuegos
+                            3D Art
                         </h2>
                     </div>
 
@@ -421,7 +427,7 @@
                 <section class="animation_projects">
                     <div class="category_label" data-key="animation">
                         <h2>
-                            Animación
+                            Animation
                         </h2>
                     </div>
 
@@ -433,49 +439,49 @@
                 <section class="about_sam">
 
                     <h2>
-                        Más sobre mí
+                        About me
                     </h2>
 
 
                     <h1>Samuel Angel Palacio Mesa</h1>
 
-                    <h4>Estudiante en Ingeniería en diseño de entretenimiento digital</h4>
+                    <h4>I love design and programming</h4>
                     <p>
-                        Soy apasionado por los contenidos de entretenimiento digital como videojuegos, series y películas. Además, muy curioso en cómo estos son desarrollados. Estoy en busca de la primera experencia laboral que me permita tanto aprender de otras personas como
-                        reflejar mis conocimientos y contribuir en la realización de proyectos.
+                        I am passionate about digital entertainment content such as video games, series and movies. Also, very curious in how these are developed
                     </p>
                     <h2>
-                        Habilidades Blandas
+                        Soft skills
                     </h2>
 
-                    <p class="center_text">Me destaco por ser una persona con las siguientes habilidades</p>
+                    <!-- <p class="center_text">Me destaco por ser una persona con las siguientes habilidades</p> -->
 
 
 
                     <ul>
                         <li>
-                            <h5>Trabajo en equipo</h5>
+                            <h5>Team work</h5>
                         </li>
                         <li>
-                            <h5>Pasión por aprender</h5>
+                            <h5>Fast learner</h5>
                         </li>
 
                         <li>
-                            <h5>Liderazgo</h5>
+                            <h5>Leadership</h5>
                         </li>
                         <li>
-                            <h5>Resolución de problemas</h5>
+                            <h5>Problem solving</h5>
                         </li>
                         <li>
-                            <h5>Orientación al logro</h5>
+                            <h5>Achievement orientation
+                            </h5>
                         </li>
                         <li>
-                            <h5>Creatividad</h5>
+                            <h5>Creativity</h5>
                         </li>
 
                     </ul>
                     <h2>
-                        Conocimientos técnicos
+                        Technical knowledge
                     </h2>
 
 
@@ -483,46 +489,47 @@
 
                     <ul>
                         <li>
-                            <h5>Desarrollo de videojuegos y web (front-end)</h5>
+                            <h5>Games and web development</h5>
                         </li>
                         <li>
-                            <h5>Programación Orientada a objetos</h5>
+                            <h5>Oriented object programming</h5>
                         </li>
 
+
                         <li>
-                            <h5>Modelado 3D</h5>
+                            <h5>Event-oriented programming</h5>
                         </li>
                         <li>
-                            <h5>Programación Orientada a eventos</h5>
+                            <h5>Networking with Photon</h5>
                         </li>
                         <li>
-                            <h5>Networking con Photon (RPC,Eventos, sincronizacion) </h5>
+                            <h5>Design Patterns</h5>
                         </li>
                         <li>
-                            <h5>Patrones de diseño </h5>
+                            <h5>3D Modeling</h5>
                         </li>
                         <li>
-                            <h5>Fisica y trigonometría</h5>
+                            <h5>Physics and trigonometry</h5>
                         </li>
                         <li>
-                            <h5>Manejo de git</h5>
+                            <h5>Git</h5>
                         </li>
 
                     </ul>
 
                     <h2>
-                        Experiencia
+                        Experience
                     </h2>
 
                     <ul class="workExperience">
                         <li>
-                            <h5>Proyectos personales(2019-2022)</h5>
+                            <h5>Personal projects(2019-2022)</h5>
                         </li>
 
                         <li>
-                            <h5>Proyecto 3D Freelance en CGTrader (Julio-2021)
+                            <h5>Freelancer in CGTrader (July,2021)
                                 <a TARGET="NEW" href="https://www.cgtrader.com/samuelpalacio">
-                                    <h6>Ver Perfil CGTrader</h6>
+                                    <h6> CGTrader profile</h6>
                                 </a>
                             </h5>
 
@@ -530,11 +537,10 @@
                         </li>
                     </ul>
                     <h2>
-                        Reconocimientos
-                    </h2>
+                        Acknowledgments </h2>
                     <picture>
                         <img class="shadow" src="src/imgs/teamFroggo.jpg" alt="TeamFroggoJump!">
-                        <h5>Ganadores con Froggo Jump! concurso UPB videojuegos </h5>
+                        <h5>Winners with Froggo Jump! - University contest</h5>
                     </picture>
                 </section>
 
@@ -542,7 +548,8 @@
                 <section class="tools">
 
 
-                    <h1 class="tools_label">Herramientas</h1>
+                    <h1 class="tools_label">Tools</h1>
+                    <p class="center_text">I easily fall in love with any tool, but these are my favorite ones</p>
 
                     <div class="all_tools">
 
@@ -552,10 +559,7 @@
 
                             <div class="group_tools">
 
-                                <span class="tool">
-                                            <img src="src/icons/cicon.png" alt="c# icon">
-                                            <h4>c#</h4>
-                                        </span>
+
                                 <span class="tool">
                                             <img src="src/icons/unity_icon.png" alt="Unity icon">
                                             <h4>Unity</h4>
@@ -564,10 +568,7 @@
                                             <img src="src/icons/maya_icon.png" alt="Maya icon">
                                             <h4>Maya</h4>
                                         </span>
-                                <span class="tool">
-                                            <img src="src/icons/blender_icon.png" alt="Blender icon">
-                                            <h4>Blender</h4>
-                                        </span>
+
                                 <span class="tool">
                                             <img src="src/icons/substance.png" alt="Substance icon">
                                             <h4>Substance</h4>
@@ -576,13 +577,12 @@
                                 <span class="tool">
                                             <img src="src/icons/photonicon.png" alt="html icon">
                                             <h4>Photon</h4>
-
                                         </span>
                                 <span class="tool">
-                                            <img src="src/icons/firebaseicon.png" alt="css icon">
-                                            <h4>Firebase</h4>
-
+                                            <img src="src/icons/photoshop_icon.png" alt="Photoshop icon">
+                                            <h4>Photoshop</h4>
                                         </span>
+
                             </div>
 
                         </div>
@@ -608,31 +608,34 @@
                                            <h4>Javascript</h4>
 
                                         </span>
-                            </div>
-
-                            <h5 class="center">Realicé mi portafolio haciendo uso de estos</h5>
-
-
-                        </div>
-
-                        <h5 class="center-desktop">Realicé mi portafolio haciendo uso de estos</h5>
-
-                        <div class="game_tools">
-                            <h3>Diseño y video</h3>
-
-                            <div class="group_tools">
                                 <span class="tool">
-                                            <img src="src/icons/photoshop_icon.png" alt="Photoshop icon">
-                                            <h4>Photoshop</h4>
-                                        </span>
-                                <span class="tool">
-                                            <img src="src/icons/premire_icon.png" alt="Premiere icon">
-                                            <h4>Premiere</h4>
+                                            <img src="src/icons/firebaseicon.png" alt="css icon">
+                                            <h4>Firebase</h4>
+
                                         </span>
                                 <span class="tool">
                                             <img src="src/icons/figma_icon.png" alt="Figma icon">
                                             <h4>Figma</h4>
                                         </span>
+                            </div>
+
+                            <h5 class="center"></h5>
+
+
+                        </div>
+
+                        <h5 class="center-desktop"></h5>
+
+                        <div class="game_tools">
+                            <h3>Video</h3>
+
+                            <div class="group_tools">
+
+                                <span class="tool">
+                                            <img src="src/icons/premire_icon.png" alt="Premiere icon">
+                                            <h4>Premiere</h4>
+                                        </span>
+
                             </div>
 
 
@@ -653,7 +656,7 @@
         <footer>
             <section class="contact_info">
                 <div class="category_label" data-key="contact"></div>
-                <h1 class="bg_y">Contáctame</h1>
+                <h1 class="bg_y">Conctact me</h1>
                 <h3>samuel.angel1709@gmail.com</h3>
                 <h2>+57 3041055606</h2>
 
