@@ -10,6 +10,7 @@ const posterFroggo = document.querySelector("#froggoPoster");
 const posterTalkie = document.querySelector("#talkiePoster");
 const posterPhantomized = document.querySelector("#phantomizedPoster");
 const posterVulcano = document.querySelector("#vulcanoPoster");
+const posterTaxi = document.querySelector("#taxiPoster");
 const apk_froggo = document.querySelector('#froggo_apk');
 const codeExamplebtns = document.querySelectorAll('.code-example');
 const mp40Images = ['src/imgs/mp40Images/mp40_1.jpg', 'src/imgs/mp40Images/mp40_2.jpg', 'src/imgs/mp40Images/mp40_3.jpg', 'src/imgs/mp40Images/mp40_4.jpg'];
@@ -38,6 +39,7 @@ function init() {
     posterPhantomized.style.backgroundImage = 'url("src/imgs/phantomizedPoster.jpg")';
     posterTalkie.style.backgroundImage = 'url("src/imgs/talkiecampposter.jpg")';
     posterVulcano.style.backgroundImage = 'url("src/imgs/volcanes_poster.png")';
+    posterTaxi.style.backgroundImage = 'url("src/imgs/posterTaxi.png")';
 
     window.addEventListener('scroll', (e) => {
 
