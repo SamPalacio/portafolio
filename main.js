@@ -26,7 +26,7 @@ init();
 function init() {
 
     apk_froggo.addEventListener('click', () => {
-        window.open('https://drive.google.com/file/d/1-n44Y8wIucrslObeEd_5arjIDLALnbFg/view?usp=sharing', '_blank');
+        window.open('https://play.google.com/store/apps/details?id=com.GreenTomato.FroggoJump', '_blank');
     })
     codeExamplebtns.forEach(btn => {
         btn.addEventListener('click', () => {
