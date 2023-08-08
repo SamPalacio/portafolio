@@ -742,10 +742,6 @@ iframe {
     display: none;
 }
 
-.cv_btn:hover {
-    width: 400px;
-    height: 50px;
-}
 
 .bg_y {
     color: #de992f;
@@ -833,6 +829,9 @@ header {
     justify-content: space-between;
     background-color: var(--main-bg-color);
     width: 100% ;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: background-color 1s,box-shadow 1s, border-bottom-left-radius 0.6s, border-bottom-right-radius 0.6s;
 }
 
 
@@ -892,4 +891,9 @@ header {
     color: var(--1-color);
     border-bottom: #de992f 2px solid;
     cursor: pointer;
+}
+.header-down{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 25px;
+    background-color: #f9f4ed;
 }

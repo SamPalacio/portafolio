@@ -19,6 +19,7 @@ const saloonImages = ['src/imgs/saloonImages/saloon_1.jpg', 'src/imgs/saloonImag
 const timeless = ['src/imgs/timelessImage/timeless.jpg'];
 let newValue;
 let oldValue;
+let isMenuOpen= false;
 
 init();
 
@@ -42,21 +43,7 @@ function init() {
     posterTaxi.style.backgroundImage = 'url("src/imgs/posterTaxi.png")';
 
     window.addEventListener('scroll', (e) => {
-        checkScrollDownToEnableBar()
-        newValue = window.scrollY;
-        if (oldValue < newValue) {
-            if (window.innerWidth <= 820) {
-                const h = document.querySelector("header");
-                h.classList.add("hide");
-                menu_bar.classList.remove("show_menu")
-                const lines = document.querySelectorAll('.menu_hamburger .line');
-                lines.forEach(line => line.classList.remove('toggle_burguer'))
-            }
-        } else if (oldValue > newValue) {
-            const h = document.querySelector("header");
-            h.classList.remove("hide");
-        }
-        oldValue = newValue;
+        checkScrollDownToEnableBar();
     });
 
 
@@ -84,7 +71,7 @@ function init() {
 
 
     sectionBtns.forEach(section => section.addEventListener("click", fitView))
-    hamburgerBtns.forEach(section => section.addEventListener("click", fitViewBar))
+    hamburgerBtns.forEach(section => section.addEventListener("click", fitViewCellPhone))
     cvBtn.addEventListener("click", () => {
         document.querySelector(".about_sam").scrollIntoView();
     })
@@ -93,19 +80,53 @@ function init() {
 }
 
 function showMenu() {
+    if(!isMenuOpen){
+        isMenuOpen=true;
+        const lines = document.querySelectorAll('.menu_hamburger .line');
+        lines.forEach(line => line.classList.add('toggle_burguer'))
+        menu_bar.classList.add("show_menu")
+    }
+    else{
+        closeMenu();
+    }
+
+    
+}
+
+function closeMenu() {
+    isMenuOpen=false;
     const lines = document.querySelectorAll('.menu_hamburger .line');
-    lines.forEach(line => line.classList.toggle('toggle_burguer'))
-    menu_bar.classList.toggle("show_menu")
+    lines.forEach(line => line.classList.remove('toggle_burguer'))
+    menu_bar.classList.remove("show_menu")
 }
 
 function fitView(targetKey=null) {
 
-    
+    closeMenu();
+
     const target = (typeof targetKey !== 'string')?this.dataset.key:targetKey;
     const targetElement = document.querySelector(`.focus[data-key="${target}"]`);
     
     if (targetElement) {
-        const offset = 114; // Offset value in pixels
+        const offset = 110; // Offset value in pixels
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+    
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+    
+}
+function fitViewCellPhone(targetKey=null) {
+
+    closeMenu();
+
+    const target = (typeof targetKey !== 'string')?this.dataset.key:targetKey;
+    const targetElement = document.querySelector(`.focus[data-key="${target}"]`);
+    
+    if (targetElement) {
+        const offset = 80; // Offset value in pixels
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
     
         window.scrollTo({
@@ -116,13 +137,6 @@ function fitView(targetKey=null) {
     
 }
 
-function fitViewBar() {
-    const target = this.dataset.key;
-    menu_bar.classList.remove("show_menu")
-    document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
-    const h = document.querySelector("header");
-    h.classList.add("hide");
-}
 
 function changeImage() {
     const innerDots = this.parentNode.querySelectorAll(".dot");
