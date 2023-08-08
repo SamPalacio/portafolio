@@ -28,6 +28,7 @@
 header {
     display: flex;
     justify-content: space-between;
+   
 }
 
 .options_bar button {
@@ -100,4 +101,15 @@ p {
 
 .line3.toggle_burguer {
     rotate: 45deg;
+}
+.experience-desc{
+    font-size: 14px !important;
+}
+
+.btn-see, .descripted-item a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--1-color);
+    border-bottom: #de992f 2px solid;
+    cursor: pointer;
 }

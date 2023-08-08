@@ -16,22 +16,54 @@
 
     <div class="page shadow">
 
-        <header>
-            <div class="line shadow"></div>
-            <div class="name">
-                <h2 class="portfolio_label">Portfolio</h2>
-                <h1>Samuel Palacio</h1>
-            </div>
+        <header class="fixed-bar" id="header">
+
+          
+                <div class="line shadow"></div>
+                <div class="name">
+                    <h2 class="portfolio_label">Portfolio</h2>
+                    <h1>Samuel Palacio</h1>
+                </div>
+    
+    
+                    <button class="menu_hamburger menu">
+                        <div class="line1 line"></div>
+                        <div class="line2 line"></div>
+                        <div class="line3 line"></div>
+                    </button>
 
 
-            <button class="menu_hamburger menu">
-             <div class="line1 line"></div>
-             <div class="line2 line"></div>
-             <div class="line3 line"></div>
-         </button>
+                    <div class="options_bar ">
+
+                        <button data-key="videogames" >
+                         <h3>Videogames</h3>
+                     </button>
+                        <button data-key="web">
+                         <h3>Web</h3>
+                     </button>
+                        <button data-key="art">
+                         <h3>3D Art</h3>
+                     </button>
+                        <button class="code-example hide">
+                         <h3>Code example</h3>
+                     </button>
+                     <button data-key="experience">
+                        <h3>Experience</h3>
+                    </button>
+        
+        
+                        <button data-key="contact">
+                         <h3>Contact</h3>
+                     </button>
+        
+        
+                    </div>
+        
+    
+            
 
             <div class="menu_side shadow ">
-
+    
                 <div class="close"></div>
                 <div class="options">
                     <button data-key="videogames">
@@ -43,55 +75,33 @@
                     <button data-key="art">
                      <h3>3D Art</h3>
                  </button>
-                    <button class="code-example" data-key="code-example">
+                    <button class="code-example hide" data-key="code-example">
                      <h3>Code example</h3>
                  </button>
                     <button data-key="contact">
                      <h3>Contact</h3>
                  </button>
 
+                 <button data-key="experience">
+                    <h3>Experience</h3>
+                </button>
+
                 </div>
 
             </div>
 
-
-            <div class="options_bar">
-
-                <button data-key="videogames">
-                 <h3>Videogames</h3>
-             </button>
-                <button data-key="web">
-                 <h3>Web</h3>
-             </button>
-                <button data-key="art">
-                 <h3>3D Art</h3>
-             </button>
-
-                <button class="code-example">
-                 <h3>Code example</h3>
-             </button>
-
-                <button data-key="contact">
-                 <h3>Contact</h3>
-             </button>
-
-
-            </div>
-
+            
         </header>
 
         <main>
             <section class="about_me">
                 <div class="description">
                     <p>
-                        Engineering student in digital entertainment design with strong passion and skills in <strong>game and web development</strong> </p>
+                        Engineer in  Design of Digital Entertainment with strong passion and skills in <strong>game and interactive web development</strong> </p>
                     <div class="cv_btn shadow">
-
                         <a class="cv">
                             <h3>About me</h3>
                         </a>
-
-
                     </div>
                 </div>
 
@@ -99,14 +109,10 @@
                     <img class="profile_image" src="src/imgs/mainpicture.png" alt="profile_picture">
                 </div>
             </section>
+            <section class="projects" id="personal-projects">
 
-
-
-
-            <section class="projects">
-
-                <h1 class="tools_label">My projects</h1>
-                <div class="category_label" data-key="videogames">
+                <h1 class="tools_label">Personal Projects</h1>
+                <div class="focus category_label" data-key="videogames">
                     <h2>
                         Videogames
                     </h2>
@@ -136,7 +142,7 @@
                                  <h4>Code example</h4>
                              </button>
 
-                                <p>Responsable of::</p>
+                                <p>Responsable of:</p>
                                 <ul>
                                     <li>
                                         <p>
@@ -297,8 +303,8 @@
                             <iframe  src="https://www.youtube.com/embed/4G2-2yO9vig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-
-                    <div class="project shadow">
+  
+                    <div class="project shadow ">
 
                         <div class="videogame_project ">
 
@@ -404,7 +410,7 @@
 
                 </section>
                 <section class="web-projects">
-                    <div class="category_label" data-key="web">
+                    <div class="focus category_label" data-key="web">
                         <h2>
                             Web
                         </h2>
@@ -416,20 +422,8 @@
                         <h1 class="line-web">Portfolio</h1>
                         <p>I made my own portfolio</p>
                     </div>
-                    <div class="web-project shadow">
-
-
-                        <h1 class="line-web">Online trivia game</h1>
-                        <p>Inspired by kahoot I made this project using HTML, CSS, Javascript and firebase</p>
-                        <a>Available soon!</a>
-                    </div>
-                    <!-- <div class="web-project shadow">
-
-
-                        <h1 class="line-web">Resumen del entretenimiento</h1>
-                        <p>Permite consultar detalladamente el resumen de una película o serie. Para este proyecto consumi una API de entretenimiento llamada IMDB y usé Bootstrap para el estilizado</p>
-                        <a target="_blank" href="https://sampalacio.github.io/Entregajs_API_IMDB/">Ver página</a>
-                    </div> -->
+                   
+                  
 
 
 
@@ -438,7 +432,7 @@
 
                 <section class="art_projects">
 
-                    <div class="category_label" data-key="art">
+                    <div class="focus category_label" data-key="art">
                         <h2>
                             3D Art
                         </h2>
@@ -454,6 +448,13 @@
                         <div class="dot first"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
+                    <a href="https://www.artstation.com/artwork/ea6zNJ" target="_blank">
+                        <div class="artstation-link">
+                            <img src="src/icons/logo_artstation.png" alt="">
+                        </div>
+
+                    </a>
+                        
 
                     </div>
                     <h3>Wild West Saloon</h3>
@@ -466,6 +467,13 @@
                         <div class="dot"></div>
                         <div class="dot"></div>
 
+                        <a href="https://www.artstation.com/artwork/yJv4g9" target="_blank">
+                            <div class="artstation-link">
+                                <img src="src/icons/logo_artstation.png" alt="">
+                            </div>
+    
+                        </a>
+
                     </div>
 
                     <h3>MP40 Gun-Game Ready</h3>
@@ -476,14 +484,19 @@
                         <div class="dot"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
-
+                        <a href="https://www.artstation.com/artwork/XnY2Yw" target="_blank">
+                            <div class="artstation-link">
+                                <img src="src/icons/logo_artstation.png" alt="">
+                            </div>
+    
+                        </a>
                     </div>
 
                 </section>
 
 
                 <section class="animation_projects">
-                    <div class="category_label" data-key="animation">
+                    <div class="focus category_label" data-key="animation">
                         <h2>
                             Animation
                         </h2>
@@ -507,6 +520,7 @@
                     <p>
                         I am passionate about digital entertainment content such as video games, series and movies. Also, very curious in how these are developed
                     </p>
+
                     <h2>
                         Soft skills
                     </h2>
@@ -575,33 +589,72 @@
 
                     </ul>
 
-                    <h2>
-                        Experience
-                    </h2>
-
-                    <ul class="workExperience">
-                        <li>
-                            <h5>Personal projects(2019-2022)</h5>
-                        </li>
-
-                        <li>
-                            <h5>Freelancer in CGTrader (July,2021)
-                                <a TARGET="NEW" href="https://www.cgtrader.com/samuelpalacio">
-                                    <h6> CGTrader profile</h6>
-                                </a>
-                            </h5>
-
-
-                        </li>
-                    </ul>
+                    
                     <h2>
                         Acknowledgments </h2>
                     <picture>
                         <img class="shadow" src="src/imgs/teamFroggo.jpg" alt="TeamFroggoJump!">
                         <h5>Winners with Froggo Jump! - University contest</h5>
                     </picture>
-                </section>
 
+                    <h2  class="focus" data-key="experience">
+                        Experience
+                    </h2>
+    
+                    <div class="workExperience" >
+    
+                        <div class="descripted-item">
+                            <h4>Game Developer Intern at <a target="_blank" href="https://newrona.net/">Newrona</a><br>(Jan 2023 - Aug 2023 · 7 months)</h4>
+                        
+                            
+                                
+                                <p class="experience-desc">
+                                    -Contributed to game support, enabling players to <strong>reconnect and sync the information to a started match </strong> in a gaming project using  Photon and Unity
+                                </p>
+                                <p class="experience-desc">
+                                    -Implemented <strong>bug fixes and new features</strong> in several unity projects
+                                </p>
+                                <p class="experience-desc">
+                                    -Improved the UI of a Three.js project and implemented features such as <strong>canvas drawing, undo/redo commands, screenshots, and camera controls</strong> 
+                                </p>
+                                <p class="experience-desc">
+                                    -Developed <strong>metaverses using Unity</strong>  and the Spatial platform.
+                                </p>
+                                <p class="experience-desc">
+                                    -Implemented several <strong>AR projects </strong> using ZapWorks.
+                                </p>
+                                <p class="experience-desc">
+                                   - Developed an <strong>interactive product customization webpage</strong>  allowing users to personalize products according to their preferences.
+                                </p>
+                        </div>
+                        
+               
+                    </div>
+                    <div class="workExperience" >
+    
+                        <div class="descripted-item">
+                            <h4>3D Freelancer at <a di target="_blank" href="https://www.cgtrader.com/samuelpalacio">CGTrader</a><br>(July 2021 · 1 month)</h4>
+                                <p class="experience-desc">
+                                    -Made a 3D project, designing, modeling, and texturing an environment for a short film
+                                </p>
+                              
+                        </div>
+                        
+               
+                    </div>
+                    <div class="workExperience" >
+    
+                        <div class="descripted-item">
+                            <h4>Game programmer (Personal Projects) <span class="btn-see" onclick="fitView('videogames')">See</span><br>(2019-2022 · 4 years)</h4>
+                        
+                            <p class="experience-desc">
+                                -Worked on personal projects alongside colleagues.
+                            </p>
+                        </div>
+                        
+               
+                    </div>
+                </section>
 
                 <section class="tools">
 
@@ -713,7 +766,7 @@
 
         <footer>
             <section class="contact_info">
-                <div class="category_label" data-key="contact"></div>
+                <div class="focus category_label" data-key="contact"></div>
                 <h1 class="bg_y">Contact me</h1>
                 <h3>sampalaciomesa@gmail.com</h3>
                 <h2>+57 3041055606</h2>

@@ -24,7 +24,7 @@ init();
 
 
 function init() {
-
+    checkScrollDownToEnableBar();
     apk_froggo.addEventListener('click', () => {
         window.open('https://play.google.com/store/apps/details?id=com.GreenTomato.FroggoJump', '_blank');
     })
@@ -42,7 +42,7 @@ function init() {
     posterTaxi.style.backgroundImage = 'url("src/imgs/posterTaxi.png")';
 
     window.addEventListener('scroll', (e) => {
-
+        checkScrollDownToEnableBar()
         newValue = window.scrollY;
         if (oldValue < newValue) {
             if (window.innerWidth <= 820) {
@@ -98,17 +98,26 @@ function showMenu() {
     menu_bar.classList.toggle("show_menu")
 }
 
-function fitView() {
-    const target = this.dataset.key;
-    console.log(target)
+function fitView(targetKey=null) {
 
-    document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
-
+    
+    const target = (typeof targetKey !== 'string')?this.dataset.key:targetKey;
+    const targetElement = document.querySelector(`.focus[data-key="${target}"]`);
+    
+    if (targetElement) {
+        const offset = 114; // Offset value in pixels
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+    
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+    
 }
 
 function fitViewBar() {
     const target = this.dataset.key;
-    console.log(target)
     menu_bar.classList.remove("show_menu")
     document.querySelector(` .category_label[data-key=${target}]`).scrollIntoView();
     const h = document.querySelector("header");
@@ -185,4 +194,15 @@ function show_apk(apk) {
     if (apk == 'phantomized') {
         window.open('https://drive.google.com/file/d/1sKod7hE99BDXOminmmi9DALsm-3pHK-Q/view?usp=sharing')
     }
+}
+function checkScrollDownToEnableBar(){
+    const header= document.getElementById('header');
+    if(window.scrollY>1){
+        header.classList.add('header-down')
+    }
+    else{
+        header.classList.remove('header-down')
+
+    }
+
 }

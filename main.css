@@ -25,6 +25,7 @@ h1 {
 
 body {
     background-color: var(--main-bg-color);
+
 }
 
 p {
@@ -32,15 +33,6 @@ p {
     font-size: min(max(12px, 3vw), 20px);
 }
 
-header {
-    display: flex;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--main-bg-color);
-}
 
 footer {
     position: relative;
@@ -173,6 +165,7 @@ main {
     width: 98%;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 
 .profile_picture {
@@ -686,7 +679,7 @@ iframe {
 .about_sam h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: min(max(10px, 2.8vw), 18px);
+    font-size: min(max(12px, 2.8vw), 18px);
     color: var(--main-txt-color);
     margin: 20px;
     text-align: center;
@@ -765,10 +758,6 @@ picture img {
     border-radius: 20px;
 }
 
-.workExperience {
-    display: flex;
-    flex-direction: column;
-}
 
 .workExperience li {
     max-width: 700px;
@@ -813,4 +802,94 @@ a {
 
 .line3.toggle_burguer {
     rotate: 35deg;
+}
+
+.hide{
+    display: none !important;
+}
+
+.link-upb{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+}
+
+.fixed-bar{
+    position: fixed !important;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-bottom: 10px;
+
+}
+
+
+header {
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    width: 100% ;
+}
+
+
+.artstation-link{
+    width: 44px;
+    height: 44px;
+    background-color: #141415;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    transition: all 0.1s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artstation-link:hover{
+    width: 46px;
+    height: 46px;
+
+}
+
+.artstation-link img {
+    width: 25px;
+    height: 25px;
+}
+.descripted-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    align-content: center;
+    justify-items: center;
+}
+.experience-desc{
+    font-size: 12px !important;
+}
+
+.workExperience {
+    display: flex;
+    flex-direction: column;
+    background-color:#e0992f1a ;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 90%;
+
+}
+.btn-see, .descripted-item a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--1-color);
+    border-bottom: #de992f 2px solid;
+    cursor: pointer;
 }
