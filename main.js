@@ -100,13 +100,11 @@ function closeMenu() {
 
 function fitView(targetKey=null) {
     const offset = (window.innerWidth<=820 )? 84:110; // Offset value in pixels
-    forceView(offset, targetKey, this.dataset.key)
+    forceView(offset, (typeof targetKey !== 'string')?this.dataset.key:targetKey)
 }
-function forceView(offset, targetKey=null, key ){
-
+function forceView(offset, targetKey=null ){
     closeMenu();
-    const target = (typeof targetKey !== 'string')?key:targetKey;
-    const targetElement = document.querySelector(`.focus[data-key="${target}"]`);
+    const targetElement = document.querySelector(`.focus[data-key="${targetKey}"]`);
     if (targetElement) {
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
     
