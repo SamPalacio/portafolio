@@ -71,10 +71,8 @@ function init() {
 
 
     sectionBtns.forEach(section => section.addEventListener("click", fitView))
-    hamburgerBtns.forEach(section => section.addEventListener("click", fitViewCellPhone))
-    cvBtn.addEventListener("click", () => {
-        document.querySelector(".about_sam").scrollIntoView();
-    })
+    hamburgerBtns.forEach(section => section.addEventListener("click", fitView))
+    cvBtn.addEventListener("click",fitView)
 
 
 }
@@ -101,14 +99,15 @@ function closeMenu() {
 }
 
 function fitView(targetKey=null) {
+    const offset = (window.innerWidth<=820 )? 84:110; // Offset value in pixels
+    forceView(offset, targetKey, this.dataset.key)
+}
+function forceView(offset, targetKey=null, key ){
 
     closeMenu();
-
-    const target = (typeof targetKey !== 'string')?this.dataset.key:targetKey;
+    const target = (typeof targetKey !== 'string')?key:targetKey;
     const targetElement = document.querySelector(`.focus[data-key="${target}"]`);
-    
     if (targetElement) {
-        const offset = 110; // Offset value in pixels
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
     
         window.scrollTo({
@@ -116,27 +115,7 @@ function fitView(targetKey=null) {
             behavior: 'smooth'
         });
     }
-    
 }
-function fitViewCellPhone(targetKey=null) {
-
-    closeMenu();
-
-    const target = (typeof targetKey !== 'string')?this.dataset.key:targetKey;
-    const targetElement = document.querySelector(`.focus[data-key="${target}"]`);
-    
-    if (targetElement) {
-        const offset = 80; // Offset value in pixels
-        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
-    
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
-    }
-    
-}
-
 
 function changeImage() {
     const innerDots = this.parentNode.querySelectorAll(".dot");
