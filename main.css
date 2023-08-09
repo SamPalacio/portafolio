@@ -789,7 +789,7 @@ a {
 }
 
 .line1.toggle_burguer {
-    rotate: -35deg;
+    rotate: -32deg;
 }
 
 .line2.toggle_burguer {
@@ -798,7 +798,7 @@ a {
 }
 
 .line3.toggle_burguer {
-    rotate: 35deg;
+    rotate: 32deg;
 }
 
 .hide{
