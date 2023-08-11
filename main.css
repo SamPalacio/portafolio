@@ -791,7 +791,7 @@ a {
 .line1.toggle_burguer {
     rotate: -32deg;
 }
-
+ 
 .line2.toggle_burguer {
     display: none;
     background-color: transparent;
