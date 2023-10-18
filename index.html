@@ -13,91 +13,96 @@
 </head>
 
 <body>
-
+    <div class="social">
+        <a href="https://github.com/samuelpalacio1709" target="new">
+            <img src="src/icons/githubIcon.png" alt="">
+        </a>
+    </div>
     <div class="page shadow">
 
         <header class="fixed-bar" id="header">
 
-          
-                <div class="line shadow"></div>
-                <div class="name">
-                    <h2 class="portfolio_label">Portfolio</h2>
-                    <h1>Samuel Palacio</h1>
-                </div>
-    
-    
-                    <button class="menu_hamburger menu">
-                        <div class="line1 line"></div>
-                        <div class="line2 line"></div>
-                        <div class="line3 line"></div>
-                    </button>
+
+            <div class="line shadow"></div>
+            <div class="name">
+                <h2 class="portfolio_label">Portfolio</h2>
+                <h1>Samuel Palacio</h1>
+            </div>
 
 
-                    <div class="options_bar ">
+            <button class="menu_hamburger menu">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </button>
 
-                        <button data-key="videogames" >
-                         <h3>Videogames</h3>
-                     </button>
-                        <button class="hide" data-key="web">
-                         <h3>Web</h3>
-                     </button>
-                        <button data-key="art">
-                         <h3>3D Art</h3>
-                     </button>
-                        <button class="code-example hide">
-                         <h3>Code example</h3>
-                     </button>
-                     <button  data-key="experience">
-                        <h3>Experience</h3>
-                    </button>
-        
-        
-                        <button data-key="contact">
-                         <h3>Contact</h3>
-                     </button>
-        
-        
-                    </div>
-        
-    
-            
+
+            <div class="options_bar ">
+
+                <button data-key="videogames">
+                    <h3>Videogames</h3>
+                </button>
+                <button class="hide" data-key="web">
+                    <h3>Web</h3>
+                </button>
+                <button data-key="art">
+                    <h3>3D Art</h3>
+                </button>
+                <button class="code-example hide">
+                    <h3>Code example</h3>
+                </button>
+                <button data-key="experience">
+                    <h3>Experience</h3>
+                </button>
+
+
+                <button data-key="contact">
+                    <h3>Contact</h3>
+                </button>
+
+
+            </div>
+
+
+
 
             <div class="menu_side shadow ">
-    
+
                 <div class="close"></div>
                 <div class="options">
                     <button data-key="videogames">
-                     <h3>Videogames</h3>
-                 </button>
+                        <h3>Videogames</h3>
+                    </button>
                     <button class="hide" data-key="web">
-                     <h3>Web</h3>
-                 </button>
+                        <h3>Web</h3>
+                    </button>
                     <button data-key="art">
-                     <h3>3D Art</h3>
-                 </button>
+                        <h3>3D Art</h3>
+                    </button>
                     <button class="code-example hide" data-key="code-example">
-                     <h3>Code example</h3>
-                 </button>
+                        <h3>Code example</h3>
+                    </button>
                     <button data-key="contact">
-                     <h3>Contact</h3>
-                 </button>
+                        <h3>Contact</h3>
+                    </button>
 
-                 <button data-key="experience">
-                    <h3>Experience</h3>
-                </button>
+                    <button data-key="experience">
+                        <h3>Experience</h3>
+                    </button>
 
                 </div>
 
             </div>
 
-            
+
         </header>
 
         <main>
             <section class="about_me">
                 <div class="description">
                     <p>
-                        Engineer in  Design of Digital Entertainment with strong passion and skills in <strong>game and interactive web development</strong> </p>
+                        Engineer in Design of Digital Entertainment with strong passion and skills in <strong>game and
+                            interactive web development</strong> </p>
                     <div class="cv_btn shadow">
                         <a class="cv" data-key="about">
                             <h3>About me</h3>
@@ -107,6 +112,8 @@
 
                 <div class="profile_picture shadow">
                     <img class="profile_image" src="src/imgs/mainpicture.png" alt="profile_picture">
+
+
                 </div>
             </section>
             <section class="projects" id="personal-projects">
@@ -125,7 +132,8 @@
                         <div class="videogame_project ">
 
                             <div class="poster shadow ">
-                                <div class="poster_img" id="froggoPoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="poster_img" id="froggoPoster" onmouseenter="show_description(this)"
+                                    onmouseleave="show_description(this)">
                                     <div class="project_description blur ">
                                         <p>Froog </p>
 
@@ -139,10 +147,10 @@
                                 <h2>Froggo Jump!</h2>
                                 <h5>Mobile-casual videogame</h5>
                                 <button class="code-example hide" data-key="code-example">
-                                 <h4>Code example</h4>
-                             </button>
+                                    <h4>Code example</h4>
+                                </button>
 
-                                <p>Responsable of:</p>
+                                <p>Challenges:</p>
                                 <ul>
                                     <li>
                                         <p>
@@ -171,21 +179,24 @@
 
 
                                     <button class="project_btn shadow" id="froggo_apk">
-                                     Play Store
+                                        Play Store
                                     </button>
-                                    <button class="project_btn shadow" onclick="show_video('frog_gameplay')">
-                                     Gameplay
-                                 </button>
+                                    <button class="project_btn shadow hide" onclick="show_video('frog_gameplay')">
+                                        Gameplay
+                                    </button>
                                     <button class="project_btn shadow hide" onclick="show_repo('froggojump')">
-                                     GitHub
-                                 </button>
+                                        GitHub
+                                    </button>
                                 </div>
 
 
                             </div>
                         </div>
                         <div class="video" id="frog_gameplay">
-                            <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/ZiqQ_eK0oqE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; ?enablejsapi=1;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
 
                         </div>
                     </div>
@@ -194,7 +205,8 @@
                         <div class="videogame_project ">
 
                             <div class="poster shadow ">
-                                <div class="poster_img" id="talkiePoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="poster_img" id="talkiePoster" onmouseenter="show_description(this)"
+                                    onmouseleave="show_description(this)">
                                     <div class="project_description blur "></div>
                                 </div>
 
@@ -204,7 +216,7 @@
 
                                 <h2>Talkie Camp</h2>
                                 <h5>Mobile-Multiplayer online</h5>
-                                <p>Responsable of:</p>
+                                <p>Challenges:</p>
                                 <ul>
                                     <li>
                                         <p>
@@ -235,26 +247,31 @@
                                         APK
                                     </button>
 
-                                    <button class="project_btn shadow" onclick="show_video('talkiecamp_gameplay')">
-                                     Gameplay
-                                 </button>
+                                    <button class="project_btn shadow hide" onclick="show_video('talkiecamp_gameplay')">
+                                        Gameplay
+                                    </button>
                                     <button class="project_btn shadow hide" onclick="show_repo('talkiecamp')">
-                                    GitHub
-                                </button>
+                                        GitHub
+                                    </button>
                                 </div>
 
 
                             </div>
                         </div>
                         <div class="video" id="talkiecamp_gameplay">
-                            <iframe  src="https://www.youtube.com/embed/hffULUaBp5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
+                            <iframe src="https://www.youtube.com/embed/hffULUaBp5Y" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div class="project shadow">
 
                         <div class="videogame_project ">
 
                             <div class="poster shadow">
-                                <div class="poster_img" id="taxiPoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="poster_img" id="taxiPoster" onmouseenter="show_description(this)"
+                                    onmouseleave="show_description(this)">
                                     <div class="project_description blur "></div>
                                 </div>
 
@@ -265,7 +282,7 @@
                                 <h2>Crazy Taxi</h2>
                                 <h5>VR Game</h5>
 
-                                <p>Responsable of:</p>
+                                <p>Challenges:</p>
                                 <ul>
                                     <li>
                                         <p>
@@ -291,7 +308,7 @@
 
 
 
-                                    <button class="project_btn shadow" onclick="show_video('taxi_gameplay')">
+                                    <button class="project_btn shadow hide" onclick="show_video('taxi_gameplay')">
                                         Gameplay
                                     </button>
                                 </div>
@@ -300,16 +317,20 @@
                             </div>
                         </div>
                         <div class="video" id="taxi_gameplay">
-                            <iframe  src="https://www.youtube.com/embed/4G2-2yO9vig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/4G2-2yO9vig" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-  
+
                     <div class="project shadow ">
 
                         <div class="videogame_project ">
 
                             <div class="poster shadow">
-                                <div class="poster_img" id="vulcanoPoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="poster_img" id="vulcanoPoster" onmouseenter="show_description(this)"
+                                    onmouseleave="show_description(this)">
                                     <div class="project_description blur "></div>
                                 </div>
 
@@ -320,7 +341,7 @@
                                 <h2>Volcano: AR Experience</h2>
                                 <h5>Mobile-AR</h5>
 
-                                <p>Responsable of:</p>
+                                <p>Challenges:</p>
                                 <ul>
                                     <li>
                                         <p>
@@ -338,16 +359,19 @@
                                 <div class="project_btns">
 
 
-                                    <button class="project_btn shadow" onclick="show_video('vulcano_gameplay')">
-                                     Gameplay
-                                 </button>
+                                    <button class="project_btn shadow hide" onclick="show_video('vulcano_gameplay')">
+                                        Gameplay
+                                    </button>
                                 </div>
 
 
                             </div>
                         </div>
                         <div class="video" id="vulcano_gameplay">
-                            <iframe src="https://www.youtube.com/embed/iXl8fmrzOfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/iXl8fmrzOfA" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="project shadow">
@@ -355,7 +379,8 @@
                         <div class="videogame_project ">
 
                             <div class="poster shadow">
-                                <div class="poster_img" id="phantomizedPoster" onmouseenter="show_description(this)" onmouseleave="show_description(this)">
+                                <div class="poster_img" id="phantomizedPoster" onmouseenter="show_description(this)"
+                                    onmouseleave="show_description(this)">
                                     <div class="project_description blur "></div>
                                 </div>
 
@@ -366,7 +391,7 @@
                                 <h2>Phantomized</h2>
                                 <h5>PC-Google Cardboard</h5>
 
-                                <p>Responsable of:</p>
+                                <p>Challenges:</p>
                                 <ul>
                                     <li>
                                         <p>
@@ -393,16 +418,20 @@
                                     <button class="project_btn shadow" onclick="show_apk('phantomized')">
                                         Windows .exe
                                     </button>
-                                    <button class="project_btn shadow" onclick="show_video('phantomized_gameplay')">
-                                     Gameplay
-                                 </button>
+                                    <button class="project_btn shadow hide"
+                                        onclick="show_video('phantomized_gameplay')">
+                                        Gameplay
+                                    </button>
                                 </div>
 
 
                             </div>
                         </div>
                         <div class="video" id="phantomized_gameplay">
-                            <iframe src="https://www.youtube.com/embed/QGSxjHldvB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/QGSxjHldvB4" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
 
                         </div>
                     </div>
@@ -422,8 +451,8 @@
                         <h1 class="line-web">Portfolio</h1>
                         <p>I made my own portfolio</p>
                     </div>
-                   
-                  
+
+
 
 
 
@@ -448,13 +477,13 @@
                         <div class="dot first"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
-                    <a href="https://www.artstation.com/artwork/ea6zNJ" target="_blank">
-                        <div class="artstation-link">
-                            <img src="src/icons/logo_artstation.png" alt="">
-                        </div>
+                        <a href="https://www.artstation.com/artwork/ea6zNJ" target="_blank">
+                            <div class="artstation-link">
+                                <img src="src/icons/logo_artstation.png" alt="">
+                            </div>
 
-                    </a>
-                        
+                        </a>
+
 
                     </div>
                     <h3>Wild West Saloon</h3>
@@ -471,7 +500,7 @@
                             <div class="artstation-link">
                                 <img src="src/icons/logo_artstation.png" alt="">
                             </div>
-    
+
                         </a>
 
                     </div>
@@ -488,7 +517,7 @@
                             <div class="artstation-link">
                                 <img src="src/icons/logo_artstation.png" alt="">
                             </div>
-    
+
                         </a>
                     </div>
 
@@ -503,11 +532,14 @@
                     </div>
 
                     <h3>Reel</h3>
-                    <iframe class="shadow" src="https://www.youtube.com/embed/32FqOhIYx58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="shadow" src="https://www.youtube.com/embed/32FqOhIYx58" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </section>
 
 
-                <section class="about_sam" >
+                <section class="about_sam">
 
                     <h2 class="focus" data-key="about">
                         About me
@@ -518,7 +550,8 @@
 
                     <h4>I love design and programming</h4>
                     <p>
-                        I am passionate about digital entertainment content such as video games, series and movies. Also, very curious in how these are developed
+                        I am passionate about digital entertainment content such as video games, series and movies.
+                        Also, very curious in how these are developed
                     </p>
 
                     <h2>
@@ -589,7 +622,7 @@
 
                     </ul>
 
-                    
+
                     <h2>
                         Acknowledgments </h2>
                     <picture>
@@ -597,62 +630,69 @@
                         <h5>Winners with Froggo Jump! - University contest</h5>
                     </picture>
 
-                    <h2  class="focus" data-key="experience">
+                    <h2 class="focus" data-key="experience">
                         Experience
                     </h2>
-    
-                    <div class="workExperience" >
-    
+
+                    <div class="workExperience">
+
                         <div class="descripted-item">
-                            <h4>Game Developer Intern at <a target="_blank" href="https://newrona.net/">Newrona</a><br>(Jan 2023 - Aug 2023 · 7 months)</h4>
-                        
-                            
-                                
-                                <p class="experience-desc">
-                                    -Contributed to game support, enabling players to <strong>reconnect and sync the information to a started match </strong> in a gaming project using  Photon and Unity
-                                </p>
-                                <p class="experience-desc">
-                                    -Implemented <strong>bug fixes and new features</strong> in several unity projects
-                                </p>
-                                <p class="experience-desc">
-                                    -Improved the UI of a Three.js project and implemented features such as <strong>canvas drawing, undo/redo commands, screenshots, and camera controls</strong> 
-                                </p>
-                                <p class="experience-desc">
-                                    -Developed <strong>metaverses using Unity</strong>  and the Spatial platform.
-                                </p>
-                                <p class="experience-desc">
-                                    -Implemented several <strong>AR projects </strong> using ZapWorks.
-                                </p>
-                                <p class="experience-desc">
-                                   - Developed an <strong>interactive product customization webpage</strong>  allowing users to personalize products according to their preferences.
-                                </p>
+                            <h4>Game Developer Intern at <a target="_blank"
+                                    href="https://newrona.net/">Newrona</a><br>(Jan 2023 - Aug 2023 · 7 months)</h4>
+
+
+
+                            <p class="experience-desc">
+                                -Contributed to game support, enabling players to <strong>reconnect and sync the
+                                    information to a started match </strong> in a gaming project using Photon and Unity
+                            </p>
+                            <p class="experience-desc">
+                                -Implemented <strong>bug fixes and new features</strong> in several unity projects
+                            </p>
+                            <p class="experience-desc">
+                                -Improved the UI of a Three.js project and implemented features such as <strong>canvas
+                                    drawing, undo/redo commands, screenshots, and camera controls</strong>
+                            </p>
+                            <p class="experience-desc">
+                                -Developed <strong>metaverses using Unity</strong> and the Spatial platform.
+                            </p>
+                            <p class="experience-desc">
+                                -Implemented several <strong>AR projects </strong> using ZapWorks.
+                            </p>
+                            <p class="experience-desc">
+                                - Developed an <strong>interactive product customization webpage</strong> allowing users
+                                to personalize products according to their preferences.
+                            </p>
                         </div>
-                        
-               
+
+
                     </div>
-                    <div class="workExperience" >
-    
+                    <div class="workExperience">
+
                         <div class="descripted-item">
-                            <h4>3D Freelancer at <a di target="_blank" href="https://www.cgtrader.com/samuelpalacio">CGTrader</a><br>(July 2021 · 1 month)</h4>
-                                <p class="experience-desc">
-                                    -Made a 3D project, designing, modeling, and texturing an environment for a short film
-                                </p>
-                              
+                            <h4>3D Freelancer at <a di target="_blank"
+                                    href="https://www.cgtrader.com/samuelpalacio">CGTrader</a><br>(July 2021 · 1 month)
+                            </h4>
+                            <p class="experience-desc">
+                                -Made a 3D project, designing, modeling, and texturing an environment for a short film
+                            </p>
+
                         </div>
-                        
-               
+
+
                     </div>
-                    <div class="workExperience" >
-    
+                    <div class="workExperience">
+
                         <div class="descripted-item">
-                            <h4>Game programmer (Personal Projects) <span class="btn-see" onclick="fitView('videogames')">See</span><br>(2019-2022 · 4 years)</h4>
-                        
+                            <h4>Game programmer (Personal Projects) <span class="btn-see"
+                                    onclick="fitView('videogames')">See</span><br>(2019-2022 · 4 years)</h4>
+
                             <p class="experience-desc">
                                 -Worked on personal projects alongside colleagues.
                             </p>
                         </div>
-                        
-               
+
+
                     </div>
                 </section>
 
@@ -672,27 +712,27 @@
 
 
                                 <span class="tool">
-                                            <img src="src/icons/unity_icon.png" alt="Unity icon">
-                                            <h4>Unity</h4>
-                                        </span>
+                                    <img src="src/icons/unity_icon.png" alt="Unity icon">
+                                    <h4>Unity</h4>
+                                </span>
                                 <span class="tool">
-                                            <img src="src/icons/maya_icon.png" alt="Maya icon">
-                                            <h4>Maya</h4>
-                                        </span>
+                                    <img src="src/icons/maya_icon.png" alt="Maya icon">
+                                    <h4>Maya</h4>
+                                </span>
 
                                 <span class="tool">
-                                            <img src="src/icons/substance.png" alt="Substance icon">
-                                            <h4>Substance</h4>
-                                        </span>
+                                    <img src="src/icons/substance.png" alt="Substance icon">
+                                    <h4>Substance</h4>
+                                </span>
 
                                 <span class="tool">
-                                            <img src="src/icons/photonicon.png" alt="html icon">
-                                            <h4>Photon</h4>
-                                        </span>
+                                    <img src="src/icons/photonicon.png" alt="html icon">
+                                    <h4>Photon</h4>
+                                </span>
                                 <span class="tool">
-                                            <img src="src/icons/photoshop_icon.png" alt="Photoshop icon">
-                                            <h4>Photoshop</h4>
-                                        </span>
+                                    <img src="src/icons/photoshop_icon.png" alt="Photoshop icon">
+                                    <h4>Photoshop</h4>
+                                </span>
 
                             </div>
 
@@ -705,29 +745,29 @@
 
                             <div class="group_tools">
                                 <span class="tool">
-                                            <img src="src/icons/html_icon.png" alt="html icon">
-                                            <h4>HTML</h4>
+                                    <img src="src/icons/html_icon.png" alt="html icon">
+                                    <h4>HTML</h4>
 
-                                        </span>
+                                </span>
                                 <span class="tool">
-                                            <img src="src/icons/css_icon.png" alt="css icon">
-                                            <h4>CSS</h4>
+                                    <img src="src/icons/css_icon.png" alt="css icon">
+                                    <h4>CSS</h4>
 
-                                        </span>
+                                </span>
                                 <span class="tool">
-                                            <img src="src/icons/js_icon.png" alt="javascript icon">
-                                           <h4>Javascript</h4>
+                                    <img src="src/icons/js_icon.png" alt="javascript icon">
+                                    <h4>Javascript</h4>
 
-                                        </span>
+                                </span>
                                 <span class="tool">
-                                            <img src="src/icons/firebaseicon.png" alt="css icon">
-                                            <h4>Firebase</h4>
+                                    <img src="src/icons/firebaseicon.png" alt="css icon">
+                                    <h4>Firebase</h4>
 
-                                        </span>
+                                </span>
                                 <span class="tool">
-                                            <img src="src/icons/figma_icon.png" alt="Figma icon">
-                                            <h4>Figma</h4>
-                                        </span>
+                                    <img src="src/icons/figma_icon.png" alt="Figma icon">
+                                    <h4>Figma</h4>
+                                </span>
                             </div>
 
                             <h5 class="center"></h5>
@@ -743,9 +783,9 @@
                             <div class="group_tools">
 
                                 <span class="tool">
-                                            <img src="src/icons/premire_icon.png" alt="Premiere icon">
-                                            <h4>Premiere</h4>
-                                        </span>
+                                    <img src="src/icons/premire_icon.png" alt="Premiere icon">
+                                    <h4>Premiere</h4>
+                                </span>
 
                             </div>
 
@@ -772,10 +812,13 @@
                 <h2>+57 3041055606</h2>
 
                 <div class="contact_apps">
-                    <a href="https://www.linkedin.com/in/samuel-%C3%A1ngel-palacio-mesa-80a2b1210/" target="new"><span class="contact_app"><img src="src/icons/linkedin_icon.png" alt="linkedin icon"></span></a>
+                    <a href="https://www.linkedin.com/in/samuel-%C3%A1ngel-palacio-mesa-80a2b1210/" target="new"><span
+                            class="contact_app"><img src="src/icons/linkedin_icon.png" alt="linkedin icon"></span></a>
 
-                    <a href="https://www.instagram.com/sampalaciom/" target="new"><span class="contact_app"><img src="src/icons/instagram_icon.png" alt="instagram icon"></span></a>
-                    <a href="https://github.com/samuelpalacio1709" target="new"><span class="contact_app"><img src="src/icons/githubIcon.png" alt="instagram icon"></span></a>
+                    <a href="https://www.instagram.com/sampalaciom/" target="new"><span class="contact_app"><img
+                                src="src/icons/instagram_icon.png" alt="instagram icon"></span></a>
+                    <a href="https://github.com/samuelpalacio1709" target="new"><span class="contact_app"><img
+                                src="src/icons/githubIcon.png" alt="instagram icon"></span></a>
                 </div>
             </section>
         </footer>

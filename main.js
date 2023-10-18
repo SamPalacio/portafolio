@@ -19,7 +19,7 @@ const saloonImages = ['src/imgs/saloonImages/saloon_1.jpg', 'src/imgs/saloonImag
 const timeless = ['src/imgs/timelessImage/timeless.jpg'];
 let newValue;
 let oldValue;
-let isMenuOpen= false;
+let isMenuOpen = false;
 
 init();
 
@@ -72,42 +72,46 @@ function init() {
 
     sectionBtns.forEach(section => section.addEventListener("click", fitView))
     hamburgerBtns.forEach(section => section.addEventListener("click", fitView))
-    cvBtn.addEventListener("click",fitView)
+    cvBtn.addEventListener("click", fitView)
 
-
+    show_video('taxi_gameplay')
+    show_video('vulcano_gameplay')
+    show_video('talkiecamp_gameplay')
+    show_video('frog_gameplay')
+    show_video('phantomized_gameplay')
 }
 
 function showMenu() {
-    if(!isMenuOpen){
-        isMenuOpen=true;
+    if (!isMenuOpen) {
+        isMenuOpen = true;
         const lines = document.querySelectorAll('.menu_hamburger .line');
         lines.forEach(line => line.classList.add('toggle_burguer'))
         menu_bar.classList.add("show_menu")
     }
-    else{
+    else {
         closeMenu();
     }
 
-    
+
 }
 
 function closeMenu() {
-    isMenuOpen=false;
+    isMenuOpen = false;
     const lines = document.querySelectorAll('.menu_hamburger .line');
     lines.forEach(line => line.classList.remove('toggle_burguer'))
     menu_bar.classList.remove("show_menu")
 }
 
-function fitView(targetKey=null) {
-    const offset = (window.innerWidth<=820 )? 84:110; // Offset value in pixels
-    forceView(offset, (typeof targetKey !== 'string')?this.dataset.key:targetKey)
+function fitView(targetKey = null) {
+    const offset = (window.innerWidth <= 820) ? 84 : 110; // Offset value in pixels
+    forceView(offset, (typeof targetKey !== 'string') ? this.dataset.key : targetKey)
 }
-function forceView(offset, targetKey=null ){
+function forceView(offset, targetKey = null) {
     closeMenu();
     const targetElement = document.querySelector(`.focus[data-key="${targetKey}"]`);
     if (targetElement) {
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
-    
+
         window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
@@ -186,14 +190,15 @@ function show_apk(apk) {
         window.open('https://drive.google.com/file/d/1sKod7hE99BDXOminmmi9DALsm-3pHK-Q/view?usp=sharing')
     }
 }
-function checkScrollDownToEnableBar(){
-    const header= document.getElementById('header');
-    if(window.scrollY>1){
+function checkScrollDownToEnableBar() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 1) {
         header.classList.add('header-down')
     }
-    else{
+    else {
         header.classList.remove('header-down')
 
     }
 
 }
+
