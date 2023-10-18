@@ -933,8 +933,10 @@ header {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    opacity: 0.8;
     transition: all 0.3s;
+    z-index: 100;
+    background-color: var(--3-color);
+    border-radius: 100px;
 }
 
 .social:hover {
@@ -944,4 +946,6 @@ header {
 
 .social a img {
     width: 100%;
+    opacity: 0.8;
+
 }
