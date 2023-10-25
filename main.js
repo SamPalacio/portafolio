@@ -8,6 +8,7 @@ let close = document.querySelector(".close");
 const menu_bar = document.querySelector(".menu_side");
 const posterFroggo = document.querySelector("#froggoPoster");
 const posterTalkie = document.querySelector("#talkiePoster");
+const posterParkour = document.querySelector("#parkourPoster");
 const posterPhantomized = document.querySelector("#phantomizedPoster");
 const posterVulcano = document.querySelector("#vulcanoPoster");
 const posterTaxi = document.querySelector("#taxiPoster");
@@ -41,6 +42,7 @@ function init() {
     posterTalkie.style.backgroundImage = 'url("src/imgs/talkiecampposter.jpg")';
     posterVulcano.style.backgroundImage = 'url("src/imgs/volcanes_poster.png")';
     posterTaxi.style.backgroundImage = 'url("src/imgs/posterTaxi.png")';
+    posterParkour.style.backgroundImage = 'url("src/imgs/posterParkour.png")';
 
     window.addEventListener('scroll', (e) => {
         checkScrollDownToEnableBar();
@@ -188,6 +190,9 @@ function show_apk(apk) {
     }
     if (apk == 'phantomized') {
         window.open('https://drive.google.com/file/d/1sKod7hE99BDXOminmmi9DALsm-3pHK-Q/view?usp=sharing')
+    }
+    if (apk == 'parkour') {
+        window.open('https://parkour.samuelpalacio.me/')
     }
 }
 function checkScrollDownToEnableBar() {
