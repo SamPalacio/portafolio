@@ -206,4 +206,15 @@ function checkScrollDownToEnableBar() {
     }
 
 }
+function downloadPDF() {
+    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file.
+    var pdfUrl = 'src/cv.pdf';
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'cv.pdf'; // You can specify the name of the downloaded file.
+    link.click();
+}
+
+// Attach the downloadPDF function to the button's click event.
+document.getElementById('downloadButton').addEventListener('click', downloadPDF);
 
