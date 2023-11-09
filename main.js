@@ -172,6 +172,9 @@ function show_video(id_video) {
 
 function show_repo(id_repo) {
 
+    if (id_repo == 'shaders') {
+        window.open('https://codeexamplebysam.notion.site/Shaders-2bf40bb0f144490ead2cd74c09e76109')
+    }
     if (id_repo == 'froggojump') {
         window.open('https://github.com/samuelpalacio1709/CodeExample_FroggoJump-')
     }
