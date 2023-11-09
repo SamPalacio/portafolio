@@ -173,7 +173,7 @@ function show_video(id_video) {
 function show_repo(id_repo) {
 
     if (id_repo == 'froggojump') {
-        window.open('https://github.com/FroggoJump/froggojump')
+        window.open('https://github.com/samuelpalacio1709/CodeExample_FroggoJump-')
     }
     if (id_repo == 'talkiecamp') {
         window.open('https://github.com/mindfulentertainment/talkiecamp')
