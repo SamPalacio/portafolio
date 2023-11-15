@@ -646,6 +646,7 @@ iframe {
     background-color: var(--2-color);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    margin-top: 100px;
 }
 
 .contact_info {
